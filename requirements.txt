@@ -26,7 +26,6 @@ geoalchemy2>=0.12.0
 
 # Firebase & Railway
 firebase-admin>=6.0.0
-godb>=0.0.5  # Railway database helpers (optional)
 
 # Background Jobs
 APScheduler>=3.9.0
