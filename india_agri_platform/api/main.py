@@ -23,6 +23,28 @@ from india_agri_platform.core.multi_crop_predictor import (
 )
 from india_agri_platform.core.error_handling import error_handler
 
+# Configure logging BEFORE any imports that need it
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+# Production-grade rate limiting for Level 3 readiness
+try:
+    from slowapi import Limiter, _rate_limit_exceeded_handler
+    from slowapi.util import get_remote_address
+    from slowapi.middleware import SlowAPIMiddleware
+    from slowapi.errors import RateLimitExceeded
+
+    limiter = Limiter(key_func=get_remote_address, default_limits=["60/minute"])
+    RATE_LIMITING_AVAILABLE = True
+    logger.info("✅ Production rate limiting enabled for Level 3 readiness")
+except ImportError:
+    RATE_LIMITING_AVAILABLE = False
+    limiter = None
+    logger.warning("⚠️ Rate limiting not available - install slowapi for production")
+
 # Import Firebase and Railway integrations (MVP Fix)
 try:
     from firebase_config import firebase_manager
@@ -54,12 +76,7 @@ except ImportError as e:
     logging.warning(f"⚠️ Unified Crop API not available: {e}")
     UNIFIED_CROP_API_AVAILABLE = False
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
+# Logging is now configured above with the imports
 
 # FastAPI app with CORS for Firebase integration
 app = FastAPI(
@@ -72,6 +89,14 @@ app = FastAPI(
         "email": "agritech@platform.com"
     }
 )
+
+# Add production-grade rate limiting middleware for Level 3 readiness
+if RATE_LIMITING_AVAILABLE:
+    app.state.limiter = limiter
+    app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+    logger.info("🛡️ Production rate limiting middleware activated - Level 3 Ready")
+else:
+    logger.warning("⚠️ Rate limiting middleware not available - consider installing slowapi")
 
 # Add CORS middleware for Firebase integration
 app.add_middleware(
