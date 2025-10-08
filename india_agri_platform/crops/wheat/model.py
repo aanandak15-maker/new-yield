@@ -622,3 +622,6 @@ def create_trained_wheat_model() -> AdvancedWheatModel:
 
     logger.info("Created Advanced Wheat Yield Prediction Model")
     return model
+
+# Global wheat predictor instance (for multi_crop_predictor compatibility)
+wheat_predictor = create_trained_wheat_model()

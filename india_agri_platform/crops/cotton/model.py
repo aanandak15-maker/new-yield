@@ -16,7 +16,7 @@ from datetime import datetime
 sys.path.append('.')
 from india_agri_platform.core.error_handling import error_handler, ModelError
 from india_agri_platform.core.cache_manager import cache_manager
-import cotton_varieties
+from india_agri_platform.crops.cotton.cotton_varieties import cotton_variety_manager
 
 logger = logging.getLogger(__name__)
 
@@ -30,8 +30,7 @@ class CottonYieldPredictor:
         # State-specific models
         self.state_models = {}
 
-        # Cotton variety manager
-        self.cotton_variety_manager = cotton_varieties.cotton_variety_manager
+        # Cotton variety manager (already imported at top level)
 
         # Load models
         self._load_or_create_models()
