@@ -36,7 +36,7 @@ class CottonYieldPredictor:
         self._load_or_create_models()
 
     def _load_or_create_models(self):
-        """Load existing models or create new ones if needed"""
+        """Load existing models or create new ones if needed - Railway compatible"""
 
         # Major cotton states
         cotton_states = [
@@ -53,26 +53,29 @@ class CottonYieldPredictor:
                     logger.info(f"Loaded existing cotton model for {state}")
                 except Exception as e:
                     logger.error(f"Failed to load {state} model: {e}")
+                    # Try fallback model for Railway compatibility
                     self.state_models[state] = self._create_baseline_model()
             else:
                 self.state_models[state] = self._create_baseline_model()
                 logger.info(f"Created baseline cotton model for {state}")
 
     def _create_baseline_model(self):
-        """Create a baseline Random Forest model for cotton prediction"""
+        """Create a baseline statistical model for cotton prediction - Railway compatible"""
         try:
+            # First try ML approach
             from sklearn.ensemble import RandomForestRegressor
             model = RandomForestRegressor(
-                n_estimators=100,
-                max_depth=15,
-                min_samples_split=5,
+                n_estimators=50,  # Smaller for Railway
+                max_depth=10,
                 random_state=42,
-                n_jobs=-1
+                n_jobs=1  # Railway is single-core
             )
+            model.railway_compat = True
             return model
         except ImportError:
-            logger.warning("scikit-learn not available, using fallback")
-            return None
+            logger.warning("ML libraries not available, using pure statistical fallback")
+            # Pure statistical model that works anywhere
+            return self._create_statistical_fallback()
 
     def train_state_model(self, state: str, training_data: pd.DataFrame) -> bool:
         """Train model for a specific state"""
@@ -441,6 +444,93 @@ class CottonYieldPredictor:
             'last_updated': datetime.utcnow().isoformat(),
             'cotton_specific': True
         }
+
+    def _create_statistical_fallback(self):
+        """Create a pure statistical model that works without any ML libraries - Railway compatible"""
+        class StatisticalCottonModel:
+            """Statistical cotton yield predictor - works on any Python environment"""
+
+            def __init__(self):
+                # State-based yield baselines (q/ha) based on Indian agricultural data
+                self.state_baselines = {
+                    'PUNJAB': 12.0, 'HARYANA': 11.0, 'MAHARASHTRA': 18.0,
+                    'GUJARAT': 15.0, 'ANDHRA_PRADESH': 14.0, 'KARNATKA': 13.0, 'TAMIL_NADU': 19.0
+                }
+                # Variety multipliers based on variety performance data
+                self.variety_multipliers = {
+                    'BT-1861': 1.15, 'F-1861': 1.0, 'JKV-7': 1.1,
+                    'MCU-13': 1.12, 'Suraj': 1.08, 'MECH-184': 1.05,
+                    'LRA-5166': 1.18, 'Pusa Hybrid-4': 1.2, 'Vijay': 1.07
+                }
+
+            def predict(self, features_df):
+                """Make prediction using statistical approach"""
+                # Get state baseline
+                state = features_df.get('state', ['MAHARASHTRA'])[0]
+                baseline = self.state_baselines.get(state, 15.0)
+
+                # Apply environmental modifiers
+                temp_modifier = self._calculate_temperature_modifier(
+                    features_df.get('temperature_celsius', [28])[0]
+                )
+                rainfall_modifier = self._calculate_rainfall_modifier(
+                    features_df.get('rainfall_mm', [600])[0]
+                )
+
+                # Apply irrigation modifier
+                irrigation_modifier = features_df.get('irrigation_coverage', [0.5])[0] * 0.3 + 0.7
+
+                # Apply pest and soil modifiers
+                pest_modifier = 1.0 - (features_df.get('bollworm_pressure', [0.6])[0] * 0.4)
+                soil_modifier = features_df.get('soil_suitability', [0.8])[0]
+
+                # Apply variety modifier based on variety info
+                variety_modifier = self._get_variety_modifier(features_df)
+
+                # Calculate final prediction
+                prediction = (baseline *
+                            temp_modifier *
+                            rainfall_modifier *
+                            irrigation_modifier *
+                            pest_modifier *
+                            soil_modifier *
+                            variety_modifier)
+
+                # Ensure reasonable bounds
+                return np.clip(prediction, 5.0, 45.0)
+
+            def _calculate_temperature_modifier(self, temp_celsius):
+                """Calculate temperature impact on cotton yield"""
+                if 25 <= temp_celsius <= 32:
+                    return 1.0  # Optimal range
+                elif temp_celsius < 20 or temp_celsius > 35:
+                    return 0.6  # Stress conditions
+                else:
+                    return 0.8  # Moderate stress
+
+            def _calculate_rainfall_modifier(self, rainfall_mm):
+                """Calculate rainfall impact on cotton yield"""
+                if 500 <= rainfall_mm <= 800:
+                    return 1.0  # Optimal rainfall
+                elif rainfall_mm < 300 or rainfall_mm > 1000:
+                    return 0.7  # Extreme conditions
+                else:
+                    return 0.85  # Moderate rain
+
+            def _get_variety_modifier(self, features_df):
+                """Get variety modifier from features or default"""
+                # Try to get variety yield potential directly
+                yield_potential = features_df.get('variety_yield_potential', [25])[0]
+                if yield_potential > 0:
+                    # Convert back from normalized value and calculate multiplier
+                    variety_yield = yield_potential * 100  # Un-normalize
+                    baseline_yield = 25  # Standard cotton baseline
+                    return min(variety_yield / baseline_yield, 1.5)  # Max 50% premium
+
+                return 1.0  # Default modifier
+
+        return StatisticalCottonModel()
+
 
 # Global cotton predictor instance
 cotton_predictor = CottonYieldPredictor()

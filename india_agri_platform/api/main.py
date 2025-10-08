@@ -48,13 +48,21 @@ except ImportError:
 # Import Firebase and Railway integrations (MVP Fix)
 try:
     from firebase_config import firebase_manager
-    from railway_config import railway_db
     FIREBASE_AVAILABLE = True
-    RAILWAY_AVAILABLE = True
-    logging.info("✅ Firebase and Railway integrations loaded successfully")
+    logging.info("✅ Firebase integration loaded successfully")
 except ImportError as e:
-    logging.warning(f"⚠️ Firebase/Railway integrations not available: {e}")
+    logging.warning(f"⚠️ Firebase integration not available: {e}")
     FIREBASE_AVAILABLE = False
+    firebase_manager = None
+
+# Railway DB integration (simplified for Railway hosting)
+try:
+    import psycopg2
+    from psycopg2 import pool as psycopg2_pool
+    RAILWAY_AVAILABLE = True
+    logging.info("✅ PostgreSQL integration available for Railway")
+except ImportError as e:
+    logging.warning(f"⚠️ PostgreSQL not available: {e}")
     RAILWAY_AVAILABLE = False
 
 # Import ethical agricultural orchestrator
