@@ -1,0 +1,15 @@
+{
+  "total_records": 21257,
+  "unique_states": 28,
+  "date_range": "1997-2020",
+  "avg_yield": 0.21,
+  "median_yield": 0.2,
+  "yield_std": 0.18,
+  "top_states": {
+    "UTTAR PRADESH": 2142,
+    "BIHAR": 2092,
+    "ASSAM": 1756,
+    "ODISHA": 1679,
+    "KARNATAKA": 1538
+  }
+}

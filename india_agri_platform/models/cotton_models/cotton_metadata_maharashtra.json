@@ -1,0 +1,38 @@
+{
+  "state": "MAHARASHTRA",
+  "created_at": "2025-10-05T23:30:43.902783",
+  "model_type": "RandomForestRegressor",
+  "training_results": {
+    "state": "MAHARASHTRA",
+    "training_records": 112,
+    "testing_records": 39,
+    "features_used": [
+      "Area",
+      "Crop_Year",
+      "bollworm_pressure",
+      "temperature_stress",
+      "soil_suitability",
+      "irrigation_timing"
+    ],
+    "r2_score": -0.0044,
+    "rmse": 5.13,
+    "mae": 1.29,
+    "cv_r2_mean": -0.0126,
+    "cv_r2_std": 0.0981,
+    "accuracy_level": "NEEDS IMPROVEMENT (<50%)",
+    "train_years": "2012-2017",
+    "test_years": "2018-2019",
+    "cotton_specific_features": true,
+    "variety_aware": true
+  },
+  "feature_columns": [
+    "Area",
+    "Crop_Year",
+    "bollworm_pressure",
+    "temperature_stress",
+    "soil_suitability",
+    "irrigation_timing"
+  ],
+  "cotton_specific_features": true,
+  "variety_manager_integrated": true
+}

@@ -1,0 +1,57 @@
+{
+  "state_name": "bihar",
+  "full_name": "Bihar",
+  "total_area_hectares": 9416300,
+  "agricultural_area_hectares": 5800000,
+  "districts": [],
+  "agro_climatic_zones": [
+    "North Bihar",
+    "South Bihar"
+  ],
+  "major_crops": [
+    "rice",
+    "wheat",
+    "maize",
+    "pulses",
+    "sugarcane"
+  ],
+  "irrigation": {
+    "coverage_percent": 60,
+    "methods": [
+      "canal",
+      "tubewell",
+      "rainfed"
+    ],
+    "efficiency": 0.6
+  },
+  "soil_types": [
+    "alluvial",
+    "clay",
+    "sandy_loam"
+  ],
+  "climate": {
+    "temperature_range_c": [
+      8,
+      45
+    ],
+    "annual_rainfall_mm": 1200,
+    "humidity_percent": 70
+  },
+  "crop_calendar": {
+    "rabi_season": {
+      "start_month": 10,
+      "end_month": 4
+    },
+    "kharif_season": {
+      "start_month": 6,
+      "end_month": 10
+    },
+    "zaid_season": {
+      "start_month": 3,
+      "end_month": 6
+    }
+  },
+  "government_policies": [],
+  "market_centers": [],
+  "extension_services": []
+}

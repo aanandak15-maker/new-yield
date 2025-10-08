@@ -1,0 +1,83 @@
+{
+  "crop_name": "sugarcane",
+  "scientific_name": "Saccharum officinarum",
+  "growth_duration_days": 365,
+  "water_requirement_mm_per_day": 7.5,
+  "growth_stages": {
+    "initial": {
+      "duration_days": 30,
+      "kc": 0.3,
+      "water_mm_day": 2.5
+    },
+    "development": {
+      "duration_days": 40,
+      "kc": 0.7,
+      "water_mm_day": 4.0
+    },
+    "mid_season": {
+      "duration_days": 40,
+      "kc": 1.15,
+      "water_mm_day": 6.5
+    },
+    "late_season": {
+      "duration_days": 30,
+      "kc": 0.6,
+      "water_mm_day": 3.0
+    }
+  },
+  "disease_susceptibility": {
+    "rust": 0.5,
+    "blight": 0.5,
+    "mildew": 0.5,
+    "aphids": 0.5,
+    "termites": 0.5
+  },
+  "climate_sensitivity": {
+    "temperature_optimal_c": 25,
+    "temperature_range_c": [
+      15,
+      35
+    ],
+    "humidity_optimal_percent": 60,
+    "rainfall_optimal_mm": 800
+  },
+  "soil_requirements": {
+    "ph_range": [
+      6.0,
+      7.5
+    ],
+    "texture_preference": [
+      "loam",
+      "sandy_loam"
+    ],
+    "organic_matter_min_percent": 1.0
+  },
+  "yield_parameters": {
+    "max_yield_quintal_ha": 800,
+    "yield_stability_index": 0.8
+  },
+  "season": "annual",
+  "planting_months": [
+    2,
+    3,
+    9,
+    10
+  ],
+  "harvest_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "varieties": [],
+  "feature_weights": {
+    "ndvi": 0.25,
+    "rainfall": 0.2,
+    "temperature": 0.15,
+    "soil_ph": 0.1,
+    "irrigation_coverage": 0.1,
+    "variety_score": 0.2
+  }
+}

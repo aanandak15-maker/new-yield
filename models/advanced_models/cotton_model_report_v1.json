@@ -1,0 +1,40 @@
+{
+  "model_name": "cotton_ensemble_v1",
+  "training_date": "2025-10-06T15:30:48.565844",
+  "dataset_info": {
+    "source_files": 10,
+    "total_samples": 3888,
+    "features": 7
+  },
+  "individual_model_performance": {
+    "random_forest": {
+      "mae": 0.9537186375321336,
+      "weight": 0.3
+    },
+    "xgboost": {
+      "mae": 0.963044212219954,
+      "weight": 0.4
+    },
+    "catboost": {
+      "mae": 0.9622834961861193,
+      "weight": 0.3
+    }
+  },
+  "ensemble_performance": {
+    "mae": 0.948968566465641,
+    "r2_score": -0.003432930182356353,
+    "accuracy": "63.9"
+  },
+  "features_used": [
+    "normalized_area",
+    "crop_age_days",
+    "weather_rainfall",
+    "soil_ph",
+    "temperature_celsius",
+    "soil_moisture",
+    "pesticide_applied"
+  ],
+  "target_metric": "yield_quintal_per_hectare",
+  "cotton_platform_ready": true,
+  "notes": "Cotton ensemble model with pest management and soil moisture features"
+}

@@ -1,0 +1,49 @@
+district,variety_code,variety_name,yield_potential_quintal_ha,maturity_days,drought_tolerance,heat_tolerance,cold_tolerance,grain_quality,yellow_rust_resistance,brown_rust_resistance,aphid_resistance,release_year,zone
+Amritsar,HD_3086,HD 3086,55,155,0.7,0.8,0.9,0.8,0.9,0.8,0.6,2016,North-Western Zone
+Tarn Taran,HD_3086,HD 3086,55,155,0.7,0.8,0.9,0.8,0.9,0.8,0.6,2016,North-Western Zone
+Ferozepur,HD_3086,HD 3086,55,155,0.7,0.8,0.9,0.8,0.9,0.8,0.6,2016,North-Western Zone
+Amritsar,HD_2967,HD 2967,50,145,0.9,0.6,0.7,0.7,0.7,0.8,0.7,2015,North-Western Zone
+Tarn Taran,HD_2967,HD 2967,50,145,0.9,0.6,0.7,0.7,0.7,0.8,0.7,2015,North-Western Zone
+Ferozepur,HD_2967,HD 2967,50,145,0.9,0.6,0.7,0.7,0.7,0.8,0.7,2015,North-Western Zone
+Amritsar,WH_1105,WH 1105,45,135,0.8,0.7,0.6,0.6,0.6,0.7,0.9,2017,North-Western Zone
+Tarn Taran,WH_1105,WH 1105,45,135,0.8,0.7,0.6,0.6,0.6,0.7,0.9,2017,North-Western Zone
+Ferozepur,WH_1105,WH 1105,45,135,0.8,0.7,0.6,0.6,0.6,0.7,0.9,2017,North-Western Zone
+Ludhiana,HD_3086,HD 3086,55,155,0.7,0.8,0.9,0.8,0.9,0.8,0.6,2016,Central Zone
+Jalandhar,HD_3086,HD 3086,55,155,0.7,0.8,0.9,0.8,0.9,0.8,0.6,2016,Central Zone
+Patiala,HD_3086,HD 3086,55,155,0.7,0.8,0.9,0.8,0.9,0.8,0.6,2016,Central Zone
+Ludhiana,PBW_725,PBW 725,52,150,0.8,0.7,0.8,0.9,0.8,0.9,0.8,2018,Central Zone
+Jalandhar,PBW_725,PBW 725,52,150,0.8,0.7,0.8,0.9,0.8,0.9,0.8,2018,Central Zone
+Patiala,PBW_725,PBW 725,52,150,0.8,0.7,0.8,0.9,0.8,0.9,0.8,2018,Central Zone
+Ludhiana,DBW_187,DBW 187,48,140,0.6,0.8,0.9,0.8,0.9,0.9,0.8,2019,Central Zone
+Jalandhar,DBW_187,DBW 187,48,140,0.6,0.8,0.9,0.8,0.9,0.9,0.8,2019,Central Zone
+Patiala,DBW_187,DBW 187,48,140,0.6,0.8,0.9,0.8,0.9,0.9,0.8,2019,Central Zone
+Ludhiana,PBW_752,PBW 752,53,152,0.7,0.9,0.8,0.9,0.8,0.7,0.6,2020,Central Zone
+Jalandhar,PBW_752,PBW 752,53,152,0.7,0.9,0.8,0.9,0.8,0.7,0.6,2020,Central Zone
+Patiala,PBW_752,PBW 752,53,152,0.7,0.9,0.8,0.9,0.8,0.7,0.6,2020,Central Zone
+Ludhiana,HD_3059,HD 3059,47,148,0.8,0.6,0.8,0.7,0.7,0.8,0.8,2014,Central Zone
+Jalandhar,HD_3059,HD 3059,47,148,0.8,0.6,0.8,0.7,0.7,0.8,0.8,2014,Central Zone
+Patiala,HD_3059,HD 3059,47,148,0.8,0.6,0.8,0.7,0.7,0.8,0.8,2014,Central Zone
+Bathinda,PBW_725,PBW 725,52,150,0.8,0.7,0.8,0.9,0.8,0.9,0.8,2018,South-Western Zone
+Mansa,PBW_725,PBW 725,52,150,0.8,0.7,0.8,0.9,0.8,0.9,0.8,2018,South-Western Zone
+Sri Muktsar Sahib,PBW_725,PBW 725,52,150,0.8,0.7,0.8,0.9,0.8,0.9,0.8,2018,South-Western Zone
+Bathinda,HD_2967,HD 2967,50,145,0.9,0.6,0.7,0.7,0.7,0.8,0.7,2015,South-Western Zone
+Mansa,HD_2967,HD 2967,50,145,0.9,0.6,0.7,0.7,0.7,0.8,0.7,2015,South-Western Zone
+Sri Muktsar Sahib,HD_2967,HD 2967,50,145,0.9,0.6,0.7,0.7,0.7,0.8,0.7,2015,South-Western Zone
+Bathinda,WH_1105,WH 1105,45,135,0.8,0.7,0.6,0.6,0.6,0.7,0.9,2017,South-Western Zone
+Mansa,WH_1105,WH 1105,45,135,0.8,0.7,0.6,0.6,0.6,0.7,0.9,2017,South-Western Zone
+Sri Muktsar Sahib,WH_1105,WH 1105,45,135,0.8,0.7,0.6,0.6,0.6,0.7,0.9,2017,South-Western Zone
+Gurdaspur,HD_3086,HD 3086,55,155,0.7,0.8,0.9,0.8,0.9,0.8,0.6,2016,North-Eastern Zone
+Hoshiarpur,HD_3086,HD 3086,55,155,0.7,0.8,0.9,0.8,0.9,0.8,0.6,2016,North-Eastern Zone
+Rupnagar,HD_3086,HD 3086,55,155,0.7,0.8,0.9,0.8,0.9,0.8,0.6,2016,North-Eastern Zone
+Gurdaspur,DBW_187,DBW 187,48,140,0.6,0.8,0.9,0.8,0.9,0.9,0.8,2019,North-Eastern Zone
+Hoshiarpur,DBW_187,DBW 187,48,140,0.6,0.8,0.9,0.8,0.9,0.9,0.8,2019,North-Eastern Zone
+Rupnagar,DBW_187,DBW 187,48,140,0.6,0.8,0.9,0.8,0.9,0.9,0.8,2019,North-Eastern Zone
+Gurdaspur,PBW_752,PBW 752,53,152,0.7,0.9,0.8,0.9,0.8,0.7,0.6,2020,North-Eastern Zone
+Hoshiarpur,PBW_752,PBW 752,53,152,0.7,0.9,0.8,0.9,0.8,0.7,0.6,2020,North-Eastern Zone
+Rupnagar,PBW_752,PBW 752,53,152,0.7,0.9,0.8,0.9,0.8,0.7,0.6,2020,North-Eastern Zone
+Gurdaspur,HD_3059,HD 3059,47,148,0.8,0.6,0.8,0.7,0.7,0.8,0.8,2014,North-Eastern Zone
+Hoshiarpur,HD_3059,HD 3059,47,148,0.8,0.6,0.8,0.7,0.7,0.8,0.8,2014,North-Eastern Zone
+Rupnagar,HD_3059,HD 3059,47,148,0.8,0.6,0.8,0.7,0.7,0.8,0.8,2014,North-Eastern Zone
+Gurdaspur,VL_907,VL 907,44,142,0.7,0.7,0.9,0.8,0.8,0.9,0.7,2016,North-Eastern Zone
+Hoshiarpur,VL_907,VL 907,44,142,0.7,0.7,0.9,0.8,0.8,0.9,0.7,2016,North-Eastern Zone
+Rupnagar,VL_907,VL 907,44,142,0.7,0.7,0.9,0.8,0.8,0.9,0.7,2016,North-Eastern Zone

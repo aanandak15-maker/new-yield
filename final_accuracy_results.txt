@@ -1,0 +1,6 @@
+INDIA AGRICULTURAL INTELLIGENCE PLATFORM - FINAL ACCURACY TEST
+R² Score: -1.0331
+RMSE: 0.06 quintal/ha
+MAE: 0.05 quintal/ha
+Accuracy Level: NEEDS IMPROVEMENT (<60%)
+Cross-validation: 0.326 ± 0.135

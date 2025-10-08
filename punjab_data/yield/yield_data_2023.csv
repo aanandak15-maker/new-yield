@@ -1,0 +1,133 @@
+district,year,month,wheat_yield_quintal_per_hectare,area_hectares,data_source
+Amritsar,2023,11,3.6778912302256104,267300,Punjab_Agriculture_Department
+Amritsar,2023,12,3.9719210463698396,267300,Punjab_Agriculture_Department
+Amritsar,2023,1,11.650770540151592,267300,Punjab_Agriculture_Department
+Amritsar,2023,2,26.87837327525081,267300,Punjab_Agriculture_Department
+Amritsar,2023,3,36.69715697398094,267300,Punjab_Agriculture_Department
+Amritsar,2023,4,36.504092638482476,267300,Punjab_Agriculture_Department
+Tarn Taran,2023,11,4.164200483359243,241400,Punjab_Agriculture_Department
+Tarn Taran,2023,12,3.7006300781152794,241400,Punjab_Agriculture_Department
+Tarn Taran,2023,1,11.563508359823372,241400,Punjab_Agriculture_Department
+Tarn Taran,2023,2,27.53052982880575,241400,Punjab_Agriculture_Department
+Tarn Taran,2023,3,33.520787182532246,241400,Punjab_Agriculture_Department
+Tarn Taran,2023,4,38.717287731986595,241400,Punjab_Agriculture_Department
+Bathinda,2023,11,4.066274983198168,334200,Punjab_Agriculture_Department
+Bathinda,2023,12,3.9759511167738038,334200,Punjab_Agriculture_Department
+Bathinda,2023,1,11.230865615304412,334200,Punjab_Agriculture_Department
+Bathinda,2023,2,25.418636422943404,334200,Punjab_Agriculture_Department
+Bathinda,2023,3,33.887296829646644,334200,Punjab_Agriculture_Department
+Bathinda,2023,4,38.78174649451182,334200,Punjab_Agriculture_Department
+Mansa,2023,11,3.5348575775460875,217400,Punjab_Agriculture_Department
+Mansa,2023,12,3.196788681464639,217400,Punjab_Agriculture_Department
+Mansa,2023,1,10.404902129172239,217400,Punjab_Agriculture_Department
+Mansa,2023,2,22.85152948554352,217400,Punjab_Agriculture_Department
+Mansa,2023,3,33.54330421515717,217400,Punjab_Agriculture_Department
+Mansa,2023,4,34.4825191776543,217400,Punjab_Agriculture_Department
+Muktsar,2023,11,3.6338947987596724,264100,Punjab_Agriculture_Department
+Muktsar,2023,12,3.3746851812310976,264100,Punjab_Agriculture_Department
+Muktsar,2023,1,9.744544581818767,264100,Punjab_Agriculture_Department
+Muktsar,2023,2,22.894452697547163,264100,Punjab_Agriculture_Department
+Muktsar,2023,3,33.809290874072765,264100,Punjab_Agriculture_Department
+Muktsar,2023,4,39.05555637254015,264100,Punjab_Agriculture_Department
+Ferozepur,2023,11,3.788781969839986,530500,Punjab_Agriculture_Department
+Ferozepur,2023,12,3.84539415629029,530500,Punjab_Agriculture_Department
+Ferozepur,2023,1,10.821156377215035,530500,Punjab_Agriculture_Department
+Ferozepur,2023,2,25.36415054080678,530500,Punjab_Agriculture_Department
+Ferozepur,2023,3,31.198660048984376,530500,Punjab_Agriculture_Department
+Ferozepur,2023,4,33.68820536716844,530500,Punjab_Agriculture_Department
+Faridkot,2023,11,3.570555883218775,147100,Punjab_Agriculture_Department
+Faridkot,2023,12,3.393325929094717,147100,Punjab_Agriculture_Department
+Faridkot,2023,1,11.342017384230804,147100,Punjab_Agriculture_Department
+Faridkot,2023,2,25.639143728962118,147100,Punjab_Agriculture_Department
+Faridkot,2023,3,30.392959909851722,147100,Punjab_Agriculture_Department
+Faridkot,2023,4,37.97446377031634,147100,Punjab_Agriculture_Department
+Ludhiana,2023,11,4.698359622133613,374600,Punjab_Agriculture_Department
+Ludhiana,2023,12,4.613484112353181,374600,Punjab_Agriculture_Department
+Ludhiana,2023,1,14.151919671981226,374600,Punjab_Agriculture_Department
+Ludhiana,2023,2,31.443695701633587,374600,Punjab_Agriculture_Department
+Ludhiana,2023,3,41.470162833493845,374600,Punjab_Agriculture_Department
+Ludhiana,2023,4,44.118649166375455,374600,Punjab_Agriculture_Department
+Jalandhar,2023,11,4.262993130734104,263200,Punjab_Agriculture_Department
+Jalandhar,2023,12,4.0805997896515676,263200,Punjab_Agriculture_Department
+Jalandhar,2023,1,12.739050805668143,263200,Punjab_Agriculture_Department
+Jalandhar,2023,2,30.857980920539177,263200,Punjab_Agriculture_Department
+Jalandhar,2023,3,37.204779387873366,263200,Punjab_Agriculture_Department
+Jalandhar,2023,4,42.16958430497057,263200,Punjab_Agriculture_Department
+Hoshiarpur,2023,11,3.4212576905817076,338600,Punjab_Agriculture_Department
+Hoshiarpur,2023,12,3.393532931627804,338600,Punjab_Agriculture_Department
+Hoshiarpur,2023,1,9.226403032772275,338600,Punjab_Agriculture_Department
+Hoshiarpur,2023,2,24.61508120463431,338600,Punjab_Agriculture_Department
+Hoshiarpur,2023,3,32.71452364676532,338600,Punjab_Agriculture_Department
+Hoshiarpur,2023,4,36.001407190610216,338600,Punjab_Agriculture_Department
+Kapurthala,2023,11,3.612094884217732,163300,Punjab_Agriculture_Department
+Kapurthala,2023,12,3.7478130330388093,163300,Punjab_Agriculture_Department
+Kapurthala,2023,1,10.307300925394946,163300,Punjab_Agriculture_Department
+Kapurthala,2023,2,24.322602438092805,163300,Punjab_Agriculture_Department
+Kapurthala,2023,3,29.425344933346985,163300,Punjab_Agriculture_Department
+Kapurthala,2023,4,36.9742024577281,163300,Punjab_Agriculture_Department
+Nawanshahr,2023,11,3.0991255380594827,125900,Punjab_Agriculture_Department
+Nawanshahr,2023,12,3.3247335203175603,125900,Punjab_Agriculture_Department
+Nawanshahr,2023,1,11.621707770479324,125900,Punjab_Agriculture_Department
+Nawanshahr,2023,2,24.994196357239034,125900,Punjab_Agriculture_Department
+Nawanshahr,2023,3,31.77227508026807,125900,Punjab_Agriculture_Department
+Nawanshahr,2023,4,35.41062419596308,125900,Punjab_Agriculture_Department
+Sangrur,2023,11,4.168275403930714,362200,Punjab_Agriculture_Department
+Sangrur,2023,12,3.7701616309661743,362200,Punjab_Agriculture_Department
+Sangrur,2023,1,13.358288788088032,362200,Punjab_Agriculture_Department
+Sangrur,2023,2,30.583581292773776,362200,Punjab_Agriculture_Department
+Sangrur,2023,3,38.88679862181834,362200,Punjab_Agriculture_Department
+Sangrur,2023,4,39.56641761866597,362200,Punjab_Agriculture_Department
+Barnala,2023,11,3.7659626463664537,148200,Punjab_Agriculture_Department
+Barnala,2023,12,3.8152636913164644,148200,Punjab_Agriculture_Department
+Barnala,2023,1,11.25183040566214,148200,Punjab_Agriculture_Department
+Barnala,2023,2,26.42674916273252,148200,Punjab_Agriculture_Department
+Barnala,2023,3,34.50554603775357,148200,Punjab_Agriculture_Department
+Barnala,2023,4,39.028919431186296,148200,Punjab_Agriculture_Department
+Patiala,2023,11,4.012186440571855,332200,Punjab_Agriculture_Department
+Patiala,2023,12,3.974564460128757,332200,Punjab_Agriculture_Department
+Patiala,2023,1,11.99110147191631,332200,Punjab_Agriculture_Department
+Patiala,2023,2,28.50008240147964,332200,Punjab_Agriculture_Department
+Patiala,2023,3,36.52015586938124,332200,Punjab_Agriculture_Department
+Patiala,2023,4,38.375510644585376,332200,Punjab_Agriculture_Department
+Fatehgarh Sahib,2023,11,3.4962213780294933,118000,Punjab_Agriculture_Department
+Fatehgarh Sahib,2023,12,3.6973215536806956,118000,Punjab_Agriculture_Department
+Fatehgarh Sahib,2023,1,11.125235664640142,118000,Punjab_Agriculture_Department
+Fatehgarh Sahib,2023,2,27.4661651552748,118000,Punjab_Agriculture_Department
+Fatehgarh Sahib,2023,3,34.1071817837802,118000,Punjab_Agriculture_Department
+Fatehgarh Sahib,2023,4,35.23118019887654,118000,Punjab_Agriculture_Department
+Gurdaspur,2023,11,3.134545868535336,355600,Punjab_Agriculture_Department
+Gurdaspur,2023,12,3.387132296198044,355600,Punjab_Agriculture_Department
+Gurdaspur,2023,1,9.40369440091928,355600,Punjab_Agriculture_Department
+Gurdaspur,2023,2,21.98062848226519,355600,Punjab_Agriculture_Department
+Gurdaspur,2023,3,27.52240983137206,355600,Punjab_Agriculture_Department
+Gurdaspur,2023,4,31.695465517977585,355600,Punjab_Agriculture_Department
+Pathankot,2023,11,3.4986848588664397,92900,Punjab_Agriculture_Department
+Pathankot,2023,12,3.1271935677746323,92900,Punjab_Agriculture_Department
+Pathankot,2023,1,10.496666137008022,92900,Punjab_Agriculture_Department
+Pathankot,2023,2,22.395584859649652,92900,Punjab_Agriculture_Department
+Pathankot,2023,3,27.651256565733377,92900,Punjab_Agriculture_Department
+Pathankot,2023,4,32.23208209439106,92900,Punjab_Agriculture_Department
+Rupnagar,2023,11,3.1363970219501263,140000,Punjab_Agriculture_Department
+Rupnagar,2023,12,3.2689224383346245,140000,Punjab_Agriculture_Department
+Rupnagar,2023,1,8.759528630149724,140000,Punjab_Agriculture_Department
+Rupnagar,2023,2,20.11417529640086,140000,Punjab_Agriculture_Department
+Rupnagar,2023,3,29.690245421820944,140000,Punjab_Agriculture_Department
+Rupnagar,2023,4,30.701604447645707,140000,Punjab_Agriculture_Department
+Mohali,2023,11,3.290669369902816,110800,Punjab_Agriculture_Department
+Mohali,2023,12,2.8526784657924042,110800,Punjab_Agriculture_Department
+Mohali,2023,1,9.333561243316643,110800,Punjab_Agriculture_Department
+Mohali,2023,2,18.90295481927291,110800,Punjab_Agriculture_Department
+Mohali,2023,3,25.857822353866926,110800,Punjab_Agriculture_Department
+Mohali,2023,4,31.74708121828788,110800,Punjab_Agriculture_Department
+Fazilka,2023,11,3.4548941576009295,301600,Punjab_Agriculture_Department
+Fazilka,2023,12,3.7675618639453585,301600,Punjab_Agriculture_Department
+Fazilka,2023,1,11.423835823907455,301600,Punjab_Agriculture_Department
+Fazilka,2023,2,23.65225891829824,301600,Punjab_Agriculture_Department
+Fazilka,2023,3,33.81775900664718,301600,Punjab_Agriculture_Department
+Fazilka,2023,4,38.134788787631436,301600,Punjab_Agriculture_Department
+Sri Muktsar Sahib,2023,11,3.496605346575174,159600,Punjab_Agriculture_Department
+Sri Muktsar Sahib,2023,12,3.683973322847763,159600,Punjab_Agriculture_Department
+Sri Muktsar Sahib,2023,1,10.3692159565615,159600,Punjab_Agriculture_Department
+Sri Muktsar Sahib,2023,2,24.190374143004508,159600,Punjab_Agriculture_Department
+Sri Muktsar Sahib,2023,3,33.07723034719671,159600,Punjab_Agriculture_Department
+Sri Muktsar Sahib,2023,4,33.79851953281099,159600,Punjab_Agriculture_Department

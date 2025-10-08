@@ -1,0 +1,57 @@
+{
+  "state_name": "punjab",
+  "full_name": "Punjab",
+  "total_area_hectares": 5036000,
+  "agricultural_area_hectares": 4200000,
+  "districts": [],
+  "agro_climatic_zones": [
+    "North-Western Zone",
+    "Central Zone",
+    "South-Western Zone",
+    "North-Eastern Zone"
+  ],
+  "major_crops": [
+    "wheat",
+    "rice",
+    "cotton",
+    "maize",
+    "sugarcane"
+  ],
+  "irrigation": {
+    "coverage_percent": 98,
+    "methods": [
+      "canal",
+      "tubewell"
+    ],
+    "efficiency": 0.75
+  },
+  "soil_types": [
+    "alluvial",
+    "sandy_loam"
+  ],
+  "climate": {
+    "temperature_range_c": [
+      5,
+      45
+    ],
+    "annual_rainfall_mm": 600,
+    "humidity_percent": 65
+  },
+  "crop_calendar": {
+    "rabi_season": {
+      "start_month": 10,
+      "end_month": 4
+    },
+    "kharif_season": {
+      "start_month": 6,
+      "end_month": 10
+    },
+    "zaid_season": {
+      "start_month": 3,
+      "end_month": 6
+    }
+  },
+  "government_policies": [],
+  "market_centers": [],
+  "extension_services": []
+}

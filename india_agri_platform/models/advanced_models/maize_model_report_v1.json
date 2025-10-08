@@ -1,0 +1,40 @@
+{
+  "model_name": "maize_ensemble_v1",
+  "training_date": "2025-10-06T14:55:54.988969",
+  "dataset_info": {
+    "source_files": 8,
+    "total_samples": 1003,
+    "features": 7
+  },
+  "individual_model_performance": {
+    "random_forest": {
+      "mae": 65493.79537313434,
+      "weight": 0.35
+    },
+    "xgboost": {
+      "mae": 62208.45975376717,
+      "weight": 0.35
+    },
+    "catboost": {
+      "mae": 73735.25134637403,
+      "weight": 0.3
+    }
+  },
+  "ensemble_performance": {
+    "mae": 65462.11587655264,
+    "r2_score": 0.33710779926090284,
+    "accuracy": "5.6"
+  },
+  "features_used": [
+    "normalized_area",
+    "crop_age_days",
+    "weather_rainfall",
+    "soil_ph",
+    "temperature_celsius",
+    "nitrogen_level",
+    "phosphorus_level"
+  ],
+  "target_metric": "yield_quintal_per_hectare",
+  "maize_platform_ready": true,
+  "notes": "Maize ensemble model with nutrient and growth optimization features"
+}

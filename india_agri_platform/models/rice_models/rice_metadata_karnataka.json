@@ -1,0 +1,29 @@
+{
+  "state": "KARNATAKA",
+  "created_at": "2025-10-05T23:21:10.574292",
+  "model_type": "RandomForestRegressor",
+  "training_results": {
+    "state": "KARNATAKA",
+    "training_records": 556,
+    "testing_records": 133,
+    "features_used": [
+      "Area",
+      "irrigation_coverage",
+      "Crop_Year"
+    ],
+    "r2_score": -0.1395,
+    "rmse": 0.07,
+    "mae": 0.05,
+    "cv_r2_mean": -0.2567,
+    "cv_r2_std": 0.2842,
+    "accuracy_level": "NEEDS IMPROVEMENT (<50%)",
+    "train_years": "2010-2017",
+    "test_years": "2018-2019"
+  },
+  "feature_columns": [
+    "Area",
+    "irrigation_coverage",
+    "Crop_Year"
+  ],
+  "rice_variety_aware": true
+}

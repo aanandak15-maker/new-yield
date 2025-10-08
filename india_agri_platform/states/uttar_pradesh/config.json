@@ -1,0 +1,61 @@
+{
+  "state_name": "uttar_pradesh",
+  "full_name": "Uttar Pradesh",
+  "total_area_hectares": 24092800,
+  "agricultural_area_hectares": 17000000,
+  "districts": [],
+  "agro_climatic_zones": [
+    "Western Plain",
+    "Central Plain",
+    "Eastern Plain",
+    "Bundelkhand",
+    "Tarai"
+  ],
+  "major_crops": [
+    "wheat",
+    "rice",
+    "sugarcane",
+    "potato",
+    "mustard"
+  ],
+  "irrigation": {
+    "coverage_percent": 75,
+    "methods": [
+      "canal",
+      "tubewell",
+      "rainfed"
+    ],
+    "efficiency": 0.65
+  },
+  "soil_types": [
+    "alluvial",
+    "sandy_loam",
+    "loam",
+    "clay"
+  ],
+  "climate": {
+    "temperature_range_c": [
+      5,
+      48
+    ],
+    "annual_rainfall_mm": 1000,
+    "humidity_percent": 65
+  },
+  "crop_calendar": {
+    "rabi_season": {
+      "start_month": 10,
+      "end_month": 4
+    },
+    "kharif_season": {
+      "start_month": 6,
+      "end_month": 10
+    },
+    "zaid_season": {
+      "start_month": 3,
+      "end_month": 6
+    }
+  },
+  "government_policies": [],
+  "market_centers": [],
+  "extension_services": []
+}

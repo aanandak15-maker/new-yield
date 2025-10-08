@@ -1,0 +1,4 @@
+State_clean,District_clean,Crop,Crop_Year,Season_clean,Area,Production,yield_quintal_ha
+MAHARASHTRA,DHULE,Maize,2019,Rabi       ,8007.0,41117.0,5.14
+MAHARASHTRA,NASHIK,Maize,2017,Rabi       ,4000.0,20000.0,5.0
+MAHARASHTRA,PUNE,Maize,2016,Rabi       ,22400.0,176700.0,7.89

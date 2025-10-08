@@ -1,0 +1,22 @@
+{
+  "extraction_metadata": {
+    "extraction_date": "2025-10-05T23:28:06.157340",
+    "source_dataset": "APY.csv",
+    "extraction_method": "cotton_crop_filtering"
+  },
+  "dataset_summary": {
+    "total_records": 3888,
+    "unique_states": 10,
+    "date_range": "1997-2019",
+    "avg_yield": 2.47,
+    "median_yield": 2.17,
+    "yield_std": 2.15
+  },
+  "top_states": {
+    "TAMIL NADU": 702,
+    "RAJASTHAN": 619,
+    "GUJARAT": 497,
+    "KARNATKA": 497,
+    "ANDHRA PRADESH": 413
+  }
+}

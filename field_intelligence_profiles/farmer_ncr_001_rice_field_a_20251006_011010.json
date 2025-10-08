@@ -1,0 +1,153 @@
+{
+  "field_id": "farmer_ncr_001_rice_field_a_20251006_011010",
+  "farmer_id": "farmer_ncr_001",
+  "field_name": "rice_field_a",
+  "created_at": "2025-10-06T01:10:10.622126",
+  "boundary_analysis": {
+    "centroid_latitude": 28.635,
+    "centroid_longitude": 77.225,
+    "area_sqkm": 16.221035042913524,
+    "perimeter_km": 16.431167106612786,
+    "shape_classification": "irregular",
+    "irregularity_factor": 4.079708480140673,
+    "boundary_points": 4,
+    "gps_accuracy_estimate": "high",
+    "elevation_estimate_meters": 200
+  },
+  "crop_type": "rice",
+  "sowing_date": "2024-10-01",
+  "crop_age_days": 370,
+  "field_characteristics": {
+    "size_category": "industrial_farm",
+    "terrain_type": {
+      "primary_terrain": "undulating",
+      "elevation_meters": 200,
+      "slope_estimate": "moderate",
+      "drainage_potential": "moderate",
+      "erosion_risk": "medium",
+      "pest_habitat_suitability": 0.1
+    },
+    "irrigation_suitability": {
+      "recommended_method": "flood",
+      "irrigation_frequency_estimate": "daily",
+      "water_requirement_category": "high",
+      "drought_vulnerability": 0.7,
+      "efficiency_score": 65,
+      "score": 60
+    },
+    "soil_type_inference": {
+      "inferred_soil_type": "alluvial",
+      "fertility_index": 8.5,
+      "water_retention_capacity": "high",
+      "nutrient_holding_capacity": "good",
+      "erosion_sensitivity": "low"
+    },
+    "microclimate_indicators": {
+      "humidity_regime": "humid",
+      "wind_exposure_index": 0.6,
+      "frost_risk": "low",
+      "heat_stress_potential": "medium",
+      "disease_pressure_index": 0.4,
+      "suitability_score": 68
+    },
+    "crop_suitability_score": 65,
+    "vulnerability_factors": {
+      "flood_susceptibility": 0.3,
+      "soil_erosion_risk": 0.6,
+      "wind_damage_risk": 0.3,
+      "frost_damage_risk": 0.2,
+      "heat_stress_risk": 0.3
+    },
+    "management_complexity": {
+      "labor_intensity": "high",
+      "equipment_needs": "tractor_required",
+      "monitoring_frequency": "daily",
+      "irrigation_complexity": "automated",
+      "harvest_difficulty": "medium"
+    }
+  },
+  "health_monitoring": {
+    "monitoring_parameters": {
+      "critical_ndvi_low": 0.3,
+      "optimal_ndvi_range": [
+        0.6,
+        0.9
+      ],
+      "pest_vulnerable_stages": [
+        "tillering",
+        "panicle_initiation"
+      ],
+      "water_stress_sensitivity": "high"
+    },
+    "health_history": [],
+    "alerts_active": [],
+    "last_health_assessment": "2025-10-06T01:10:10.622133",
+    "health_trend": "monitoring_started",
+    "stress_indicators": {
+      "water_deficit_detected": false,
+      "nutrient_deficiency_alert": false,
+      "pest_damage_indicated": false,
+      "disease_symptoms_present": false
+    },
+    "recommended_monitoring_frequency": "every_3_days",
+    "alert_thresholds": {
+      "critical_ndvi_low": 0.3,
+      "optimal_ndvi_range": [
+        0.6,
+        0.9
+      ],
+      "pest_vulnerable_stages": [
+        "tillering",
+        "panicle_initiation"
+      ],
+      "water_stress_sensitivity": "high"
+    }
+  },
+  "crop_adaptability": {
+    "adaptability_factors": {
+      "irrigation_match": 0.6,
+      "size_compatibility": 0.8,
+      "terrain_compatibility": 0.6,
+      "microclimate_suitability": 0.68,
+      "soil_adaptability": 0.85
+    },
+    "overall_score": 0.7060000000000001,
+    "performance_prediction": "good",
+    "improvement_suggestions": [
+      "Consider irrigation system upgrade for better water distribution",
+      "Evaluate terrain modification for optimal crop performance"
+    ]
+  },
+  "performance_history": [],
+  "vulnerability_assessment": {
+    "risk_factors": {
+      "flood_risk": 0.3,
+      "drought_risk": 0.7,
+      "pest_risk": 0.1,
+      "erosion_risk": 0.6,
+      "disease_risk": 0
+    },
+    "overall_risk_score": 0.34,
+    "risk_category": "low",
+    "monitoring_priorities": [
+      [
+        "drought_risk",
+        0.7
+      ],
+      [
+        "erosion_risk",
+        0.6
+      ],
+      [
+        "flood_risk",
+        0.3
+      ]
+    ],
+    "preventive_measures": [
+      "Install water conservation systems and drought-resistant varieties"
+    ]
+  },
+  "fingerprint_status": "active",
+  "last_updated": "2025-10-06T01:10:10.622143",
+  "intelligence_score": 85
+}

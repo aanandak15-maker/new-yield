@@ -1,0 +1,353 @@
+services:
+
+  # Main API Server - Horizontal Scaling
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env.production
+    environment:
+      - WORKERS=${API_WORKERS:-4}
+      - RELOAD=0
+      - ENVIRONMENT=production
+      - DATABASE_URL=postgresql://agri_user:${DB_PASSWORD}@db:5432/agri_platform
+      - REDIS_URL=redis://redis:6379/0
+    networks:
+      - agri_platform
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.api.rule=Host(`api.agritech.india.com`)"
+      - "traefik.http.routers.api.entrypoints=websecure"
+      - "traefik.http.routers.api.tls.certresolver=letsencrypt"
+      - "traefik.http.services.api.loadbalancer.server.port=8000"
+
+  # Additional API Workers (Optional - for very high load)
+  api_worker_1:
+    extends:
+      service: api
+    deploy:
+      replicas: 2
+
+  # Production Database - PostgreSQL
+  db:
+    image: postgres:15-alpine
+    container_name: india_agri_platform_db
+    environment:
+      POSTGRES_DB: agri_platform
+      POSTGRES_USER: agri_user
+      POSTGRES_PASSWORD: secure_db_password_2024
+      POSTGRES_MAX_CONNECTIONS: 100
+      POSTGRES_SHARED_BUFFERS: 256MB
+      POSTGRES_WORK_MEM: 4MB
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    # TODO: Add custom PostgreSQL config file
+    # - ./docker/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    # - ./docker/postgresql.conf:/etc/postgresql/postgresql.conf
+    networks:
+      - agri_platform
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U agri_user -d agri_platform"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 4G
+        reservations:
+          cpus: '1.0'
+          memory: 2G
+
+  # Redis Caching Cluster
+  redis:
+    image: redis:7-alpine
+    container_name: india_agri_platform_redis
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_data:/data
+    # TODO: Add custom Redis config file
+    # - ./docker/redis.conf:/etc/redis/redis.conf
+    networks:
+      - agri_platform
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+
+  # Redis Sentinel for HA (Production Scale)
+  redis_sentinel:
+    image: redis:7-alpine
+    command: redis-sentinel /etc/redis/sentinel.conf
+    volumes:
+      - ./docker/sentinel.conf:/etc/redis/sentinel.conf
+    networks:
+      - agri_platform
+    depends_on:
+      - redis
+    restart: unless-stopped
+    deploy:
+      replicas: 3
+
+  # Monitoring Stack - Prometheus
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: india_agri_platform_prometheus
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+    networks:
+      - monitoring
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+
+  # Monitoring Stack - Grafana
+  grafana:
+    image: grafana/grafana:latest
+    container_name: india_agri_platform_grafana
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD}
+      GF_INSTALL_PLUGINS: grafana-piechart-panel,grafana-worldmap-panel
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning
+      - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards
+    networks:
+      - monitoring
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+
+  # Load Balancer & Reverse Proxy - Traefik
+  reverse_proxy:
+    image: traefik:v2.10
+    container_name: india_agri_platform_lb
+    command:
+      - "--api=false"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--certificatesresolvers.letsencrypt.acme.email=admin@indiaagri.ai"
+      - "--certificatesresolvers.letsencrypt.acme.storage=/letsencrypt/acme.json"
+      - "--certificatesresolvers.letsencrypt.acme.tlschallenge=true"
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8080:8080"  # Traefik dashboard
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - letsencrypt:/letsencrypt
+    networks:
+      - agri_platform
+      - monitoring
+    restart: unless-stopped
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: 128M
+
+  # Background Worker for Async Tasks
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+    env_file:
+      - .env.production
+    environment:
+      - WORKER_ROLE=background_processor
+      - DATABASE_URL=postgresql://agri_user:${DB_PASSWORD}@db:5432/agri_platform
+      - REDIS_URL=redis://redis:6379/0
+    networks:
+      - agri_platform
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+
+  # Log Aggregation - ELK Stack
+  elasticsearch:
+    image: elasticsearch:8.11.0
+    container_name: india_agri_platform_elasticsearch
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - xpack.security.enabled=false
+      - xpack.monitoring.enabled=false
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    networks:
+      - logging
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:9200/_cluster/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2G
+
+  kibana:
+    image: kibana:8.11.0
+    container_name: india_agri_platform_kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    networks:
+      - logging
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+    depends_on:
+      - elasticsearch
+
+  # Backup Service
+  backup:
+    image: postgres:15-alpine
+    container_name: india_agri_platform_backup
+    environment:
+      PGPASSWORD: ${DB_PASSWORD}
+    command: >
+      sh -c "while true; do
+        pg_dump -h db -U agri_user agri_platform > /backup/agri_platform_$(date +\%Y\%m\%d_\%H\%M\%S).sql
+        find /backup -name 'agri_platform_*.sql' -mtime +7 -delete
+        sleep 86400
+      done"
+    volumes:
+      - backup_data:/backup
+    networks:
+      - agri_platform
+    depends_on:
+      - db
+    restart: unless-stopped
+
+networks:
+  agri_platform:
+    driver: bridge
+    attachable: true
+  monitoring:
+    driver: bridge
+    attachable: true
+  logging:
+    driver: bridge
+    attachable: true
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+  elasticsearch_data:
+    driver: local
+  letsencrypt:
+    driver: local
+  backup_data:
+    driver: local
+
+# Production secrets management
+secrets:
+  db_password:
+    external: true
+  grafana_password:
+    external: true
+  api_keys:
+    external: true
+
+# Health checks for zero-downtime deployments
+x-healthcheck:
+  api: &api-health
+    test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+    interval: 30s
+    timeout: 10s
+    retries: 3
+    start_period: 40s
+  db: &db-health
+    test: ["CMD-SHELL", "pg_isready -U agri_user -d agri_platform"]
+    interval: 30s
+    timeout: 10s
+    retries: 3
+    start_period: 20s
+  redis: &redis-health
+    test: ["CMD", "redis-cli", "ping"]
+    interval: 30s
+    timeout: 5s
+    retries: 3
+
+# Usage example:
+# docker-compose -f docker-compose.production.yml up -d
+# docker-compose -f docker-compose.production.yml scale api=5

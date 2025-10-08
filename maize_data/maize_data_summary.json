@@ -1,0 +1,22 @@
+{
+  "extraction_metadata": {
+    "extraction_date": "2025-10-05T23:33:46.421195",
+    "source_dataset": "APY.csv",
+    "extraction_method": "maize_corn_filtering"
+  },
+  "dataset_summary": {
+    "total_records": 1003,
+    "unique_states": 8,
+    "date_range": "1998-2019",
+    "avg_yield": 6.91,
+    "median_yield": 6.69,
+    "yield_std": 1.58
+  },
+  "top_states": {
+    "TAMIL_NADU": 440,
+    "ANDHRA_PRADESH": 302,
+    "BIHAR": 207,
+    "KARNATAKA": 32,
+    "MADHYA_PRADESH": 8
+  }
+}

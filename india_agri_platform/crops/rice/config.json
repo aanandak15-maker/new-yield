@@ -1,0 +1,340 @@
+{
+  "crop_name": "rice",
+  "display_name": "Rice",
+  "scientific_name": "Oryza sativa",
+  "yield_parameters": {
+    "max_yield_quintal_ha": 60,
+    "yield_stability_index": 0.75
+  },
+  "growth_parameters": {
+    "crop_duration_days": {
+      "kharif": 120,
+      "rabi": 140,
+      "summer": 100
+    },
+    "critical_growth_stages": [
+      "establishment",
+      "vegetative_growth",
+      "reproductive",
+      "grain_filling"
+    ]
+  },
+  "environmental_requirements": {
+    "temperature_optimal_c": {
+      "vegetative": 25,
+      "reproductive": 28,
+      "grain_filling": 25
+    },
+    "temperature_range_c": {
+      "min": 10,
+      "max": 35,
+      "optimal_min": 20,
+      "optimal_max": 30
+    },
+    "rainfall_requirement_mm": {
+      "kharif": 1200,
+      "rabi": 300,
+      "summer": 200
+    },
+    "soil_ph_range": {
+      "min": 4.0,
+      "max": 8.0,
+      "optimal_min": 5.5,
+      "optimal_max": 6.5
+    },
+    "soil_texture": [
+      "clay",
+      "clay_loam",
+      "silty_clay"
+    ],
+    "irrigation_frequency": "continuous_flooding"
+  },
+  "nutrient_requirements": {
+    "nitrogen_kg_ha": 120,
+    "phosphorus_kg_ha": 60,
+    "potassium_kg_ha": 40,
+    "micronutrients": {
+      "zinc": 25,
+      "iron": 50,
+      "manganese": 25
+    }
+  },
+  "water_requirements": {
+    "water_depth_cm": {
+      "establishment": 2.5,
+      "vegetative": 5.0,
+      "reproductive": 5.0,
+      "grain_filling": 3.0
+    },
+    "total_water_requirement_mm": 1200,
+    "irrigation_efficiency_percent": 65
+  },
+  "disease_risks": {
+    "blast": {
+      "risk_level": "high",
+      "preventive_measures": [
+        "seed_treatment",
+        "field_sanitation"
+      ]
+    },
+    "bacterial_blight": {
+      "risk_level": "medium",
+      "preventive_measures": [
+        "resistant_varieties",
+        "avoid_water_logging"
+      ]
+    },
+    "brown_spot": {
+      "risk_level": "medium",
+      "preventive_measures": [
+        "balanced_fertilization",
+        "field_preparation"
+      ]
+    },
+    "rust": {
+      "risk_level": "low",
+      "preventive_measures": [
+        "variety_selection",
+        "crop_rotation"
+      ]
+    },
+    "tungro": {
+      "risk_level": "medium",
+      "preventive_measures": [
+        "vector_control",
+        "resistant_varieties"
+      ]
+    }
+  },
+  "pest_risks": {
+    "stem_borer": {
+      "risk_level": "high",
+      "preventive_measures": [
+        "light_trap",
+        "neem_oil_spray"
+      ]
+    },
+    "brown_plant_hopper": {
+      "risk_level": "high",
+      "preventive_measures": [
+        "systemic_insecticide",
+        "field_monitoring"
+      ]
+    },
+    "rice_leaf_folder": {
+      "risk_level": "medium",
+      "preventive_measures": [
+        "biological_control",
+        "balanced_fertilization"
+      ]
+    }
+  },
+  "market_parameters": {
+    "average_price_per_quintal": 1800,
+    "seasonal_variation_percent": 30,
+    "export_potential": true,
+    "milling_recovery_percent": 65
+  },
+  "climate_adaptation": {
+    "drought_tolerance_score": 5,
+    "flood_tolerance_score": 8,
+    "heat_tolerance_score": 6,
+    "cold_tolerance_score": 4
+  },
+  "statewise_parameters": {
+    "punjab": {
+      "yield_adjustment_factor": 1.2,
+      "irrigation_requirement_percent": 95,
+      "dominant_varieties": [
+        "PR121",
+        "PR126",
+        "PUSA-44"
+      ]
+    },
+    "haryana": {
+      "yield_adjustment_factor": 1.1,
+      "irrigation_requirement_percent": 88,
+      "dominant_varieties": [
+        "HKV-18",
+        "HKV-15",
+        "HKV-11"
+      ]
+    },
+    "uttar_pradesh": {
+      "yield_adjustment_factor": 1.0,
+      "irrigation_requirement_percent": 72,
+      "dominant_varieties": [
+        "NDR-359",
+        "NDR-97",
+        "MDS-204"
+      ]
+    },
+    "bihar": {
+      "yield_adjustment_factor": 0.9,
+      "irrigation_requirement_percent": 45,
+      "dominant_varieties": [
+        "RAJENDRA-93",
+        "RAJENDRA-101",
+        "MTU-7029"
+      ]
+    },
+    "west_bengal": {
+      "yield_adjustment_factor": 1.0,
+      "irrigation_requirement_percent": 55,
+      "dominant_varieties": [
+        "SWARNA",
+        "KRISHNA-HAMSARA",
+        "MANOHARSALI"
+      ]
+    },
+    "odisha": {
+      "yield_adjustment_factor": 0.9,
+      "irrigation_requirement_percent": 35,
+      "dominant_varieties": [
+        "KRISHNA",
+        "SABITA",
+        "NILAGIRI"
+      ]
+    },
+    "andhra_pradesh": {
+      "yield_adjustment_factor": 1.1,
+      "irrigation_requirement_percent": 65,
+      "dominant_varieties": [
+        "MTU-1001",
+        "MTU-7029",
+        "BPT-5204"
+      ]
+    },
+    "tamil_nadu": {
+      "yield_adjustment_factor": 1.2,
+      "irrigation_requirement_percent": 58,
+      "dominant_varieties": [
+        "ASD-18",
+        "IR-64",
+        "CO-51"
+      ]
+    }
+  },
+  "seasonal_characteristics": {
+    "kharif": {
+      "sowing_period": "June-July",
+      "harvesting_period": "October-November",
+      "water_intensity": "high",
+      "yield_potential": "high"
+    },
+    "rabi": {
+      "sowing_period": "November-December",
+      "harvesting_period": "March-April",
+      "water_intensity": "medium",
+      "yield_potential": "medium"
+    },
+    "summer": {
+      "sowing_period": "January-February",
+      "harvesting_period": "April-May",
+      "water_intensity": "very_high",
+      "yield_potential": "low"
+    }
+  },
+  "regional_adaptability": {
+    "north_india": [
+      "punjab",
+      "haryana",
+      "delhi",
+      "uttarakhand"
+    ],
+    "central_india": [
+      "madhya_pradesh",
+      "chhattisgarh",
+      "jharkhand"
+    ],
+    "east_india": [
+      "west_bengal",
+      "bihar",
+      "odisha",
+      "assam"
+    ],
+    "south_india": [
+      "andhra_pradesh",
+      "tamil_nadu",
+      "karnataka",
+      "kerala"
+    ],
+    "north_east": [
+      "arunachal_pradesh",
+      "meghalaya",
+      "manipur",
+      "tripura"
+    ]
+  },
+  "growth_duration_days": 140,
+  "water_requirement_mm_per_day": 8.0,
+  "growth_stages": {
+    "initial": {
+      "duration_days": 30,
+      "kc": 0.3,
+      "water_mm_day": 2.5
+    },
+    "development": {
+      "duration_days": 40,
+      "kc": 0.7,
+      "water_mm_day": 4.0
+    },
+    "mid_season": {
+      "duration_days": 40,
+      "kc": 1.15,
+      "water_mm_day": 6.5
+    },
+    "late_season": {
+      "duration_days": 30,
+      "kc": 0.6,
+      "water_mm_day": 3.0
+    }
+  },
+  "disease_susceptibility": {
+    "rust": 0.5,
+    "blight": 0.5,
+    "mildew": 0.5,
+    "aphids": 0.5,
+    "termites": 0.5
+  },
+  "climate_sensitivity": {
+    "temperature_optimal_c": 25,
+    "temperature_range_c": [
+      15,
+      35
+    ],
+    "humidity_optimal_percent": 60,
+    "rainfall_optimal_mm": 800
+  },
+  "soil_requirements": {
+    "ph_range": [
+      6.0,
+      7.5
+    ],
+    "texture_preference": [
+      "loam",
+      "sandy_loam"
+    ],
+    "organic_matter_min_percent": 1.0
+  },
+  "season": "kharif",
+  "planting_months": [
+    6,
+    7,
+    8
+  ],
+  "harvest_months": [
+    10,
+    11,
+    12
+  ],
+  "varieties": [],
+  "feature_weights": {
+    "ndvi": 0.25,
+    "rainfall": 0.2,
+    "temperature": 0.15,
+    "soil_ph": 0.1,
+    "irrigation_coverage": 0.1,
+    "variety_score": 0.2
+  }
+}

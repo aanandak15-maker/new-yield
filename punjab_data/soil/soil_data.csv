@@ -1,0 +1,23 @@
+soil_ph,organic_carbon_percent,soil_texture,salinity_dsm,data_source,district
+7.6,0.44,Sandy Loam,0.0,Punjab_Remote_Sensing_Centre,Amritsar
+7.5,0.48,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre,Tarn Taran
+8.3,0.25,Sandy Loam,0.67,Punjab_Remote_Sensing_Centre,Bathinda
+7.9,0.4,Sandy Loam,0.62,Punjab_Remote_Sensing_Centre,Mansa
+8.1,0.18,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre,Muktsar
+7.1,0.53,Sandy Loam,0.36,Punjab_Remote_Sensing_Centre,Ferozepur
+8.0,0.3,Sandy Loam,0.33,Punjab_Remote_Sensing_Centre,Faridkot
+7.6,0.56,Sandy Loam,0.49,Punjab_Remote_Sensing_Centre,Ludhiana
+7.6,0.59,Sandy Loam,0.52,Punjab_Remote_Sensing_Centre,Jalandhar
+8.5,0.27,Sandy Loam,0.48,Punjab_Remote_Sensing_Centre,Hoshiarpur
+8.3,0.12,Sandy Loam,0.18,Punjab_Remote_Sensing_Centre,Kapurthala
+7.0,0.11,Sandy Loam,0.31,Punjab_Remote_Sensing_Centre,Nawanshahr
+8.9,0.34,Sandy Loam,0.4,Punjab_Remote_Sensing_Centre,Sangrur
+8.5,0.24,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre,Barnala
+7.4,0.5,Sandy Loam,0.39,Punjab_Remote_Sensing_Centre,Patiala
+7.8,0.39,Sandy Loam,0.38,Punjab_Remote_Sensing_Centre,Fatehgarh Sahib
+7.6,0.33,Sandy Loam,0.07,Punjab_Remote_Sensing_Centre,Gurdaspur
+7.7,0.35,Sandy Loam,0.56,Punjab_Remote_Sensing_Centre,Pathankot
+8.8,0.28,Sandy Loam,0.33,Punjab_Remote_Sensing_Centre,Rupnagar
+8.0,0.22,Sandy Loam,0.17,Punjab_Remote_Sensing_Centre,Mohali
+7.3,0.32,Sandy Loam,0.44,Punjab_Remote_Sensing_Centre,Fazilka
+8.1,0.38,Sandy Loam,0.89,Punjab_Remote_Sensing_Centre,Sri Muktsar Sahib

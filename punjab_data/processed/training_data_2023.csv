@@ -1,0 +1,133 @@
+district,year,month,wheat_yield_quintal_per_hectare,area_hectares,data_source_x,temperature_celsius,rainfall_mm,humidity_percent,wind_speed_kmph,ndvi,fpar,lai,data_source_y,soil_ph,organic_carbon_percent,soil_texture,salinity_dsm,data_source
+Amritsar,2023,11,3.6778912302256104,267300,Punjab_Agriculture_Department,14.979999999999999,0.1,60.243857121778255,4.558807715322909,0.263,0.12,0.79,MODIS_GEE,7.6,0.44,Sandy Loam,0.0,Punjab_Remote_Sensing_Centre
+Amritsar,2023,12,3.9719210463698396,267300,Punjab_Agriculture_Department,15.12258064516129,0.4,62.844981675946705,4.631293333212929,0.244,0.137,0.73,MODIS_GEE,7.6,0.44,Sandy Loam,0.0,Punjab_Remote_Sensing_Centre
+Amritsar,2023,1,11.650770540151592,267300,Punjab_Agriculture_Department,,,,,0.288,0.304,0.86,MODIS_GEE,7.6,0.44,Sandy Loam,0.0,Punjab_Remote_Sensing_Centre
+Amritsar,2023,2,26.87837327525081,267300,Punjab_Agriculture_Department,,,,,0.772,0.476,2.32,MODIS_GEE,7.6,0.44,Sandy Loam,0.0,Punjab_Remote_Sensing_Centre
+Amritsar,2023,3,36.69715697398094,267300,Punjab_Agriculture_Department,,,,,0.63,0.378,1.89,MODIS_GEE,7.6,0.44,Sandy Loam,0.0,Punjab_Remote_Sensing_Centre
+Amritsar,2023,4,36.504092638482476,267300,Punjab_Agriculture_Department,,,,,0.317,0.224,0.95,MODIS_GEE,7.6,0.44,Sandy Loam,0.0,Punjab_Remote_Sensing_Centre
+Tarn Taran,2023,11,4.164200483359243,241400,Punjab_Agriculture_Department,15.286666666666667,0.0,59.4467930466992,5.179052520279703,0.257,0.152,0.77,MODIS_GEE,7.5,0.48,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Tarn Taran,2023,12,3.7006300781152794,241400,Punjab_Agriculture_Department,14.451612903225806,1.0,60.891378265425985,5.416672497610309,0.224,0.204,0.67,MODIS_GEE,7.5,0.48,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Tarn Taran,2023,1,11.563508359823372,241400,Punjab_Agriculture_Department,,,,,0.343,0.384,1.03,MODIS_GEE,7.5,0.48,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Tarn Taran,2023,2,27.53052982880575,241400,Punjab_Agriculture_Department,,,,,0.722,0.579,2.17,MODIS_GEE,7.5,0.48,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Tarn Taran,2023,3,33.520787182532246,241400,Punjab_Agriculture_Department,,,,,0.6,0.372,1.8,MODIS_GEE,7.5,0.48,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Tarn Taran,2023,4,38.717287731986595,241400,Punjab_Agriculture_Department,,,,,0.286,0.25,0.86,MODIS_GEE,7.5,0.48,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Bathinda,2023,11,4.066274983198168,334200,Punjab_Agriculture_Department,14.120000000000001,0.30000000000000004,57.2134921096493,4.813815695416908,0.176,0.13,0.53,MODIS_GEE,8.3,0.25,Sandy Loam,0.67,Punjab_Remote_Sensing_Centre
+Bathinda,2023,12,3.9759511167738038,334200,Punjab_Agriculture_Department,14.525806451612903,2.4,61.039309734312454,4.214428599176754,0.148,0.168,0.44,MODIS_GEE,8.3,0.25,Sandy Loam,0.67,Punjab_Remote_Sensing_Centre
+Bathinda,2023,1,11.230865615304412,334200,Punjab_Agriculture_Department,,,,,0.4,0.33,1.2,MODIS_GEE,8.3,0.25,Sandy Loam,0.67,Punjab_Remote_Sensing_Centre
+Bathinda,2023,2,25.418636422943404,334200,Punjab_Agriculture_Department,,,,,0.622,0.577,1.87,MODIS_GEE,8.3,0.25,Sandy Loam,0.67,Punjab_Remote_Sensing_Centre
+Bathinda,2023,3,33.887296829646644,334200,Punjab_Agriculture_Department,,,,,0.422,0.465,1.27,MODIS_GEE,8.3,0.25,Sandy Loam,0.67,Punjab_Remote_Sensing_Centre
+Bathinda,2023,4,38.78174649451182,334200,Punjab_Agriculture_Department,,,,,0.34,0.237,1.02,MODIS_GEE,8.3,0.25,Sandy Loam,0.67,Punjab_Remote_Sensing_Centre
+Mansa,2023,11,3.5348575775460875,217400,Punjab_Agriculture_Department,14.413333333333332,2.0,58.987142035173356,4.8375130779281745,0.252,0.078,0.76,MODIS_GEE,7.9,0.4,Sandy Loam,0.62,Punjab_Remote_Sensing_Centre
+Mansa,2023,12,3.196788681464639,217400,Punjab_Agriculture_Department,15.016129032258064,0.3,61.08228299251554,5.327802303730561,0.114,0.155,0.34,MODIS_GEE,7.9,0.4,Sandy Loam,0.62,Punjab_Remote_Sensing_Centre
+Mansa,2023,1,10.404902129172239,217400,Punjab_Agriculture_Department,,,,,0.326,0.398,0.98,MODIS_GEE,7.9,0.4,Sandy Loam,0.62,Punjab_Remote_Sensing_Centre
+Mansa,2023,2,22.85152948554352,217400,Punjab_Agriculture_Department,,,,,0.647,0.537,1.94,MODIS_GEE,7.9,0.4,Sandy Loam,0.62,Punjab_Remote_Sensing_Centre
+Mansa,2023,3,33.54330421515717,217400,Punjab_Agriculture_Department,,,,,0.497,0.528,1.49,MODIS_GEE,7.9,0.4,Sandy Loam,0.62,Punjab_Remote_Sensing_Centre
+Mansa,2023,4,34.4825191776543,217400,Punjab_Agriculture_Department,,,,,0.197,0.253,0.59,MODIS_GEE,7.9,0.4,Sandy Loam,0.62,Punjab_Remote_Sensing_Centre
+Muktsar,2023,11,3.6338947987596724,264100,Punjab_Agriculture_Department,15.493333333333334,1.7000000000000002,60.61458463293743,4.759147523920336,0.176,0.137,0.53,MODIS_GEE,8.1,0.18,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Muktsar,2023,12,3.3746851812310976,264100,Punjab_Agriculture_Department,14.683870967741935,0.1,62.01150973201306,4.853203077220822,0.228,0.146,0.68,MODIS_GEE,8.1,0.18,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Muktsar,2023,1,9.744544581818767,264100,Punjab_Agriculture_Department,,,,,0.376,0.347,1.13,MODIS_GEE,8.1,0.18,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Muktsar,2023,2,22.894452697547163,264100,Punjab_Agriculture_Department,,,,,0.69,0.598,2.07,MODIS_GEE,8.1,0.18,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Muktsar,2023,3,33.809290874072765,264100,Punjab_Agriculture_Department,,,,,0.508,0.418,1.53,MODIS_GEE,8.1,0.18,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Muktsar,2023,4,39.05555637254015,264100,Punjab_Agriculture_Department,,,,,0.317,0.304,0.95,MODIS_GEE,8.1,0.18,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Ferozepur,2023,11,3.788781969839986,530500,Punjab_Agriculture_Department,15.253333333333334,3.1,62.13932439925845,4.015358456186912,0.221,0.132,0.66,MODIS_GEE,7.1,0.53,Sandy Loam,0.36,Punjab_Remote_Sensing_Centre
+Ferozepur,2023,12,3.84539415629029,530500,Punjab_Agriculture_Department,15.006451612903225,1.1,57.701317850277775,5.538877585478406,0.13,0.124,0.39,MODIS_GEE,7.1,0.53,Sandy Loam,0.36,Punjab_Remote_Sensing_Centre
+Ferozepur,2023,1,10.821156377215035,530500,Punjab_Agriculture_Department,,,,,0.287,0.246,0.86,MODIS_GEE,7.1,0.53,Sandy Loam,0.36,Punjab_Remote_Sensing_Centre
+Ferozepur,2023,2,25.36415054080678,530500,Punjab_Agriculture_Department,,,,,0.571,0.644,1.71,MODIS_GEE,7.1,0.53,Sandy Loam,0.36,Punjab_Remote_Sensing_Centre
+Ferozepur,2023,3,31.198660048984376,530500,Punjab_Agriculture_Department,,,,,0.28,0.49,0.84,MODIS_GEE,7.1,0.53,Sandy Loam,0.36,Punjab_Remote_Sensing_Centre
+Ferozepur,2023,4,33.68820536716844,530500,Punjab_Agriculture_Department,,,,,0.341,0.158,1.02,MODIS_GEE,7.1,0.53,Sandy Loam,0.36,Punjab_Remote_Sensing_Centre
+Faridkot,2023,11,3.570555883218775,147100,Punjab_Agriculture_Department,15.623333333333333,2.7,62.651924727005074,5.248777244852765,0.235,0.124,0.7,MODIS_GEE,8.0,0.3,Sandy Loam,0.33,Punjab_Remote_Sensing_Centre
+Faridkot,2023,12,3.393325929094717,147100,Punjab_Agriculture_Department,15.641935483870967,2.0,61.79642783913939,4.769236020431972,0.219,0.085,0.66,MODIS_GEE,8.0,0.3,Sandy Loam,0.33,Punjab_Remote_Sensing_Centre
+Faridkot,2023,1,11.342017384230804,147100,Punjab_Agriculture_Department,,,,,0.561,0.412,1.68,MODIS_GEE,8.0,0.3,Sandy Loam,0.33,Punjab_Remote_Sensing_Centre
+Faridkot,2023,2,25.639143728962118,147100,Punjab_Agriculture_Department,,,,,0.587,0.603,1.76,MODIS_GEE,8.0,0.3,Sandy Loam,0.33,Punjab_Remote_Sensing_Centre
+Faridkot,2023,3,30.392959909851722,147100,Punjab_Agriculture_Department,,,,,0.462,0.405,1.39,MODIS_GEE,8.0,0.3,Sandy Loam,0.33,Punjab_Remote_Sensing_Centre
+Faridkot,2023,4,37.97446377031634,147100,Punjab_Agriculture_Department,,,,,0.293,0.256,0.88,MODIS_GEE,8.0,0.3,Sandy Loam,0.33,Punjab_Remote_Sensing_Centre
+Ludhiana,2023,11,4.698359622133613,374600,Punjab_Agriculture_Department,15.086666666666668,1.6,56.99416645787601,5.25471654996763,0.226,0.129,0.68,MODIS_GEE,7.6,0.56,Sandy Loam,0.49,Punjab_Remote_Sensing_Centre
+Ludhiana,2023,12,4.613484112353181,374600,Punjab_Agriculture_Department,15.803225806451612,0.2,59.817461376766175,4.834177692526742,0.258,0.12,0.77,MODIS_GEE,7.6,0.56,Sandy Loam,0.49,Punjab_Remote_Sensing_Centre
+Ludhiana,2023,1,14.151919671981226,374600,Punjab_Agriculture_Department,,,,,0.365,0.413,1.1,MODIS_GEE,7.6,0.56,Sandy Loam,0.49,Punjab_Remote_Sensing_Centre
+Ludhiana,2023,2,31.443695701633587,374600,Punjab_Agriculture_Department,,,,,0.548,0.558,1.64,MODIS_GEE,7.6,0.56,Sandy Loam,0.49,Punjab_Remote_Sensing_Centre
+Ludhiana,2023,3,41.470162833493845,374600,Punjab_Agriculture_Department,,,,,0.646,0.305,1.94,MODIS_GEE,7.6,0.56,Sandy Loam,0.49,Punjab_Remote_Sensing_Centre
+Ludhiana,2023,4,44.118649166375455,374600,Punjab_Agriculture_Department,,,,,0.328,0.285,0.98,MODIS_GEE,7.6,0.56,Sandy Loam,0.49,Punjab_Remote_Sensing_Centre
+Jalandhar,2023,11,4.262993130734104,263200,Punjab_Agriculture_Department,15.243333333333334,1.3,59.05209251364239,5.11633229248668,0.25,0.125,0.75,MODIS_GEE,7.6,0.59,Sandy Loam,0.52,Punjab_Remote_Sensing_Centre
+Jalandhar,2023,12,4.0805997896515676,263200,Punjab_Agriculture_Department,14.709677419354838,1.4,61.80970562267012,4.9951478950916535,0.272,0.124,0.81,MODIS_GEE,7.6,0.59,Sandy Loam,0.52,Punjab_Remote_Sensing_Centre
+Jalandhar,2023,1,12.739050805668143,263200,Punjab_Agriculture_Department,,,,,0.339,0.349,1.02,MODIS_GEE,7.6,0.59,Sandy Loam,0.52,Punjab_Remote_Sensing_Centre
+Jalandhar,2023,2,30.857980920539177,263200,Punjab_Agriculture_Department,,,,,0.662,0.474,1.98,MODIS_GEE,7.6,0.59,Sandy Loam,0.52,Punjab_Remote_Sensing_Centre
+Jalandhar,2023,3,37.204779387873366,263200,Punjab_Agriculture_Department,,,,,0.431,0.408,1.29,MODIS_GEE,7.6,0.59,Sandy Loam,0.52,Punjab_Remote_Sensing_Centre
+Jalandhar,2023,4,42.16958430497057,263200,Punjab_Agriculture_Department,,,,,0.248,0.282,0.74,MODIS_GEE,7.6,0.59,Sandy Loam,0.52,Punjab_Remote_Sensing_Centre
+Hoshiarpur,2023,11,3.4212576905817076,338600,Punjab_Agriculture_Department,15.74,0.9,59.318360569973855,5.431643507442492,0.203,0.172,0.61,MODIS_GEE,8.5,0.27,Sandy Loam,0.48,Punjab_Remote_Sensing_Centre
+Hoshiarpur,2023,12,3.393532931627804,338600,Punjab_Agriculture_Department,15.412903225806453,2.3000000000000003,61.607648984293995,5.350629852629539,0.215,0.128,0.65,MODIS_GEE,8.5,0.27,Sandy Loam,0.48,Punjab_Remote_Sensing_Centre
+Hoshiarpur,2023,1,9.226403032772275,338600,Punjab_Agriculture_Department,,,,,0.384,0.245,1.15,MODIS_GEE,8.5,0.27,Sandy Loam,0.48,Punjab_Remote_Sensing_Centre
+Hoshiarpur,2023,2,24.61508120463431,338600,Punjab_Agriculture_Department,,,,,0.719,0.685,2.16,MODIS_GEE,8.5,0.27,Sandy Loam,0.48,Punjab_Remote_Sensing_Centre
+Hoshiarpur,2023,3,32.71452364676532,338600,Punjab_Agriculture_Department,,,,,0.505,0.344,1.52,MODIS_GEE,8.5,0.27,Sandy Loam,0.48,Punjab_Remote_Sensing_Centre
+Hoshiarpur,2023,4,36.001407190610216,338600,Punjab_Agriculture_Department,,,,,0.207,0.284,0.62,MODIS_GEE,8.5,0.27,Sandy Loam,0.48,Punjab_Remote_Sensing_Centre
+Kapurthala,2023,11,3.612094884217732,163300,Punjab_Agriculture_Department,15.51,0.1,59.77532763232493,4.777176053278393,0.173,0.156,0.52,MODIS_GEE,8.3,0.12,Sandy Loam,0.18,Punjab_Remote_Sensing_Centre
+Kapurthala,2023,12,3.7478130330388093,163300,Punjab_Agriculture_Department,15.658064516129032,0.0,58.4491657110916,4.785319416798176,0.299,0.156,0.9,MODIS_GEE,8.3,0.12,Sandy Loam,0.18,Punjab_Remote_Sensing_Centre
+Kapurthala,2023,1,10.307300925394946,163300,Punjab_Agriculture_Department,,,,,0.412,0.388,1.24,MODIS_GEE,8.3,0.12,Sandy Loam,0.18,Punjab_Remote_Sensing_Centre
+Kapurthala,2023,2,24.322602438092805,163300,Punjab_Agriculture_Department,,,,,0.539,0.444,1.62,MODIS_GEE,8.3,0.12,Sandy Loam,0.18,Punjab_Remote_Sensing_Centre
+Kapurthala,2023,3,29.425344933346985,163300,Punjab_Agriculture_Department,,,,,0.407,0.549,1.22,MODIS_GEE,8.3,0.12,Sandy Loam,0.18,Punjab_Remote_Sensing_Centre
+Kapurthala,2023,4,36.9742024577281,163300,Punjab_Agriculture_Department,,,,,0.302,0.272,0.91,MODIS_GEE,8.3,0.12,Sandy Loam,0.18,Punjab_Remote_Sensing_Centre
+Nawanshahr,2023,11,3.0991255380594827,125900,Punjab_Agriculture_Department,15.066666666666666,0.5,58.27845160258316,4.590625161990551,0.261,0.11,0.78,MODIS_GEE,7.0,0.11,Sandy Loam,0.31,Punjab_Remote_Sensing_Centre
+Nawanshahr,2023,12,3.3247335203175603,125900,Punjab_Agriculture_Department,13.990322580645161,2.2,59.92905501886254,5.235207089515297,0.26,0.126,0.78,MODIS_GEE,7.0,0.11,Sandy Loam,0.31,Punjab_Remote_Sensing_Centre
+Nawanshahr,2023,1,11.621707770479324,125900,Punjab_Agriculture_Department,,,,,0.366,0.284,1.1,MODIS_GEE,7.0,0.11,Sandy Loam,0.31,Punjab_Remote_Sensing_Centre
+Nawanshahr,2023,2,24.994196357239034,125900,Punjab_Agriculture_Department,,,,,0.524,0.478,1.57,MODIS_GEE,7.0,0.11,Sandy Loam,0.31,Punjab_Remote_Sensing_Centre
+Nawanshahr,2023,3,31.77227508026807,125900,Punjab_Agriculture_Department,,,,,0.503,0.473,1.51,MODIS_GEE,7.0,0.11,Sandy Loam,0.31,Punjab_Remote_Sensing_Centre
+Nawanshahr,2023,4,35.41062419596308,125900,Punjab_Agriculture_Department,,,,,0.374,0.242,1.12,MODIS_GEE,7.0,0.11,Sandy Loam,0.31,Punjab_Remote_Sensing_Centre
+Sangrur,2023,11,4.168275403930714,362200,Punjab_Agriculture_Department,14.153333333333334,0.0,59.9737437094633,4.452013587194265,0.21,0.132,0.63,MODIS_GEE,8.9,0.34,Sandy Loam,0.4,Punjab_Remote_Sensing_Centre
+Sangrur,2023,12,3.7701616309661743,362200,Punjab_Agriculture_Department,14.712903225806452,0.4,58.57690083559815,4.903095120642525,0.16,0.147,0.48,MODIS_GEE,8.9,0.34,Sandy Loam,0.4,Punjab_Remote_Sensing_Centre
+Sangrur,2023,1,13.358288788088032,362200,Punjab_Agriculture_Department,,,,,0.367,0.361,1.1,MODIS_GEE,8.9,0.34,Sandy Loam,0.4,Punjab_Remote_Sensing_Centre
+Sangrur,2023,2,30.583581292773776,362200,Punjab_Agriculture_Department,,,,,0.751,0.495,2.25,MODIS_GEE,8.9,0.34,Sandy Loam,0.4,Punjab_Remote_Sensing_Centre
+Sangrur,2023,3,38.88679862181834,362200,Punjab_Agriculture_Department,,,,,0.512,0.531,1.53,MODIS_GEE,8.9,0.34,Sandy Loam,0.4,Punjab_Remote_Sensing_Centre
+Sangrur,2023,4,39.56641761866597,362200,Punjab_Agriculture_Department,,,,,0.304,0.301,0.91,MODIS_GEE,8.9,0.34,Sandy Loam,0.4,Punjab_Remote_Sensing_Centre
+Barnala,2023,11,3.7659626463664537,148200,Punjab_Agriculture_Department,14.606666666666666,1.0,60.01509101431161,5.098038352798002,0.221,0.144,0.66,MODIS_GEE,8.5,0.24,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Barnala,2023,12,3.8152636913164644,148200,Punjab_Agriculture_Department,14.790322580645162,2.6999999999999997,59.55012973826232,5.1818121113310776,0.321,0.108,0.96,MODIS_GEE,8.5,0.24,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Barnala,2023,1,11.25183040566214,148200,Punjab_Agriculture_Department,,,,,0.486,0.369,1.46,MODIS_GEE,8.5,0.24,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Barnala,2023,2,26.42674916273252,148200,Punjab_Agriculture_Department,,,,,0.472,0.64,1.42,MODIS_GEE,8.5,0.24,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Barnala,2023,3,34.50554603775357,148200,Punjab_Agriculture_Department,,,,,0.497,0.413,1.49,MODIS_GEE,8.5,0.24,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Barnala,2023,4,39.028919431186296,148200,Punjab_Agriculture_Department,,,,,0.297,0.248,0.89,MODIS_GEE,8.5,0.24,Sandy Loam,0.45,Punjab_Remote_Sensing_Centre
+Patiala,2023,11,4.012186440571855,332200,Punjab_Agriculture_Department,14.15,0.9,59.12403122008348,4.810003443672428,0.171,0.163,0.51,MODIS_GEE,7.4,0.5,Sandy Loam,0.39,Punjab_Remote_Sensing_Centre
+Patiala,2023,12,3.974564460128757,332200,Punjab_Agriculture_Department,14.13225806451613,2.2,59.61054422178422,4.88834029210794,0.099,0.164,0.3,MODIS_GEE,7.4,0.5,Sandy Loam,0.39,Punjab_Remote_Sensing_Centre
+Patiala,2023,1,11.99110147191631,332200,Punjab_Agriculture_Department,,,,,0.458,0.46,1.38,MODIS_GEE,7.4,0.5,Sandy Loam,0.39,Punjab_Remote_Sensing_Centre
+Patiala,2023,2,28.50008240147964,332200,Punjab_Agriculture_Department,,,,,0.664,0.347,1.99,MODIS_GEE,7.4,0.5,Sandy Loam,0.39,Punjab_Remote_Sensing_Centre
+Patiala,2023,3,36.52015586938124,332200,Punjab_Agriculture_Department,,,,,0.526,0.593,1.58,MODIS_GEE,7.4,0.5,Sandy Loam,0.39,Punjab_Remote_Sensing_Centre
+Patiala,2023,4,38.375510644585376,332200,Punjab_Agriculture_Department,,,,,0.29,0.205,0.87,MODIS_GEE,7.4,0.5,Sandy Loam,0.39,Punjab_Remote_Sensing_Centre
+Fatehgarh Sahib,2023,11,3.4962213780294933,118000,Punjab_Agriculture_Department,14.69,0.8,60.67412794830411,5.03357525629858,0.134,0.131,0.4,MODIS_GEE,7.8,0.39,Sandy Loam,0.38,Punjab_Remote_Sensing_Centre
+Fatehgarh Sahib,2023,12,3.6973215536806956,118000,Punjab_Agriculture_Department,14.151612903225805,1.4,59.37740320437292,5.387931487876901,0.133,0.181,0.4,MODIS_GEE,7.8,0.39,Sandy Loam,0.38,Punjab_Remote_Sensing_Centre
+Fatehgarh Sahib,2023,1,11.125235664640142,118000,Punjab_Agriculture_Department,,,,,0.352,0.38,1.06,MODIS_GEE,7.8,0.39,Sandy Loam,0.38,Punjab_Remote_Sensing_Centre
+Fatehgarh Sahib,2023,2,27.4661651552748,118000,Punjab_Agriculture_Department,,,,,0.52,0.546,1.56,MODIS_GEE,7.8,0.39,Sandy Loam,0.38,Punjab_Remote_Sensing_Centre
+Fatehgarh Sahib,2023,3,34.1071817837802,118000,Punjab_Agriculture_Department,,,,,0.43,0.453,1.29,MODIS_GEE,7.8,0.39,Sandy Loam,0.38,Punjab_Remote_Sensing_Centre
+Fatehgarh Sahib,2023,4,35.23118019887654,118000,Punjab_Agriculture_Department,,,,,0.285,0.191,0.86,MODIS_GEE,7.8,0.39,Sandy Loam,0.38,Punjab_Remote_Sensing_Centre
+Gurdaspur,2023,11,3.134545868535336,355600,Punjab_Agriculture_Department,15.013333333333332,0.8,56.92117716999484,4.586006324103575,0.272,0.174,0.81,MODIS_GEE,7.6,0.33,Sandy Loam,0.07,Punjab_Remote_Sensing_Centre
+Gurdaspur,2023,12,3.387132296198044,355600,Punjab_Agriculture_Department,15.516129032258064,1.1,61.43719691036138,4.852317741190825,0.177,0.155,0.53,MODIS_GEE,7.6,0.33,Sandy Loam,0.07,Punjab_Remote_Sensing_Centre
+Gurdaspur,2023,1,9.40369440091928,355600,Punjab_Agriculture_Department,,,,,0.526,0.329,1.58,MODIS_GEE,7.6,0.33,Sandy Loam,0.07,Punjab_Remote_Sensing_Centre
+Gurdaspur,2023,2,21.98062848226519,355600,Punjab_Agriculture_Department,,,,,0.569,0.461,1.71,MODIS_GEE,7.6,0.33,Sandy Loam,0.07,Punjab_Remote_Sensing_Centre
+Gurdaspur,2023,3,27.52240983137206,355600,Punjab_Agriculture_Department,,,,,0.537,0.44,1.61,MODIS_GEE,7.6,0.33,Sandy Loam,0.07,Punjab_Remote_Sensing_Centre
+Gurdaspur,2023,4,31.695465517977585,355600,Punjab_Agriculture_Department,,,,,0.258,0.277,0.77,MODIS_GEE,7.6,0.33,Sandy Loam,0.07,Punjab_Remote_Sensing_Centre
+Pathankot,2023,11,3.4986848588664397,92900,Punjab_Agriculture_Department,14.943333333333333,0.7,58.14028260334872,4.69508434205157,0.261,0.129,0.78,MODIS_GEE,7.7,0.35,Sandy Loam,0.56,Punjab_Remote_Sensing_Centre
+Pathankot,2023,12,3.1271935677746323,92900,Punjab_Agriculture_Department,14.258064516129032,0.0,58.32456813366315,4.710485397338541,0.152,0.094,0.46,MODIS_GEE,7.7,0.35,Sandy Loam,0.56,Punjab_Remote_Sensing_Centre
+Pathankot,2023,1,10.496666137008022,92900,Punjab_Agriculture_Department,,,,,0.475,0.309,1.42,MODIS_GEE,7.7,0.35,Sandy Loam,0.56,Punjab_Remote_Sensing_Centre
+Pathankot,2023,2,22.395584859649652,92900,Punjab_Agriculture_Department,,,,,0.593,0.481,1.78,MODIS_GEE,7.7,0.35,Sandy Loam,0.56,Punjab_Remote_Sensing_Centre
+Pathankot,2023,3,27.651256565733377,92900,Punjab_Agriculture_Department,,,,,0.454,0.412,1.36,MODIS_GEE,7.7,0.35,Sandy Loam,0.56,Punjab_Remote_Sensing_Centre
+Pathankot,2023,4,32.23208209439106,92900,Punjab_Agriculture_Department,,,,,0.28,0.264,0.84,MODIS_GEE,7.7,0.35,Sandy Loam,0.56,Punjab_Remote_Sensing_Centre
+Rupnagar,2023,11,3.1363970219501263,140000,Punjab_Agriculture_Department,15.663333333333332,0.7,58.72867167012749,5.580137617452899,0.159,0.149,0.48,MODIS_GEE,8.8,0.28,Sandy Loam,0.33,Punjab_Remote_Sensing_Centre
+Rupnagar,2023,12,3.2689224383346245,140000,Punjab_Agriculture_Department,14.993548387096775,1.9000000000000001,59.139969564571025,4.945598297424992,0.206,0.09,0.62,MODIS_GEE,8.8,0.28,Sandy Loam,0.33,Punjab_Remote_Sensing_Centre
+Rupnagar,2023,1,8.759528630149724,140000,Punjab_Agriculture_Department,,,,,0.566,0.417,1.7,MODIS_GEE,8.8,0.28,Sandy Loam,0.33,Punjab_Remote_Sensing_Centre
+Rupnagar,2023,2,20.11417529640086,140000,Punjab_Agriculture_Department,,,,,0.583,0.608,1.75,MODIS_GEE,8.8,0.28,Sandy Loam,0.33,Punjab_Remote_Sensing_Centre
+Rupnagar,2023,3,29.690245421820944,140000,Punjab_Agriculture_Department,,,,,0.504,0.554,1.51,MODIS_GEE,8.8,0.28,Sandy Loam,0.33,Punjab_Remote_Sensing_Centre
+Rupnagar,2023,4,30.701604447645707,140000,Punjab_Agriculture_Department,,,,,0.301,0.209,0.9,MODIS_GEE,8.8,0.28,Sandy Loam,0.33,Punjab_Remote_Sensing_Centre
+Mohali,2023,11,3.290669369902816,110800,Punjab_Agriculture_Department,14.863333333333333,1.2,62.80420861505331,4.9911647303503335,0.214,0.19,0.64,MODIS_GEE,8.0,0.22,Sandy Loam,0.17,Punjab_Remote_Sensing_Centre
+Mohali,2023,12,2.8526784657924042,110800,Punjab_Agriculture_Department,14.925806451612903,0.9,62.12793981955606,5.478746428275479,0.123,0.141,0.37,MODIS_GEE,8.0,0.22,Sandy Loam,0.17,Punjab_Remote_Sensing_Centre
+Mohali,2023,1,9.333561243316643,110800,Punjab_Agriculture_Department,,,,,0.312,0.257,0.94,MODIS_GEE,8.0,0.22,Sandy Loam,0.17,Punjab_Remote_Sensing_Centre
+Mohali,2023,2,18.90295481927291,110800,Punjab_Agriculture_Department,,,,,0.573,0.537,1.72,MODIS_GEE,8.0,0.22,Sandy Loam,0.17,Punjab_Remote_Sensing_Centre
+Mohali,2023,3,25.857822353866926,110800,Punjab_Agriculture_Department,,,,,0.627,0.434,1.88,MODIS_GEE,8.0,0.22,Sandy Loam,0.17,Punjab_Remote_Sensing_Centre
+Mohali,2023,4,31.74708121828788,110800,Punjab_Agriculture_Department,,,,,0.37,0.204,1.11,MODIS_GEE,8.0,0.22,Sandy Loam,0.17,Punjab_Remote_Sensing_Centre
+Fazilka,2023,11,3.4548941576009295,301600,Punjab_Agriculture_Department,16.25,0.7999999999999999,59.69041391939903,5.121623081053801,0.205,0.127,0.62,MODIS_GEE,7.3,0.32,Sandy Loam,0.44,Punjab_Remote_Sensing_Centre
+Fazilka,2023,12,3.7675618639453585,301600,Punjab_Agriculture_Department,15.019354838709678,0.7999999999999999,59.14724416502358,5.059118570181057,0.169,0.167,0.51,MODIS_GEE,7.3,0.32,Sandy Loam,0.44,Punjab_Remote_Sensing_Centre
+Fazilka,2023,1,11.423835823907455,301600,Punjab_Agriculture_Department,,,,,0.456,0.307,1.37,MODIS_GEE,7.3,0.32,Sandy Loam,0.44,Punjab_Remote_Sensing_Centre
+Fazilka,2023,2,23.65225891829824,301600,Punjab_Agriculture_Department,,,,,0.703,0.486,2.11,MODIS_GEE,7.3,0.32,Sandy Loam,0.44,Punjab_Remote_Sensing_Centre
+Fazilka,2023,3,33.81775900664718,301600,Punjab_Agriculture_Department,,,,,0.41,0.46,1.23,MODIS_GEE,7.3,0.32,Sandy Loam,0.44,Punjab_Remote_Sensing_Centre
+Fazilka,2023,4,38.134788787631436,301600,Punjab_Agriculture_Department,,,,,0.293,0.319,0.88,MODIS_GEE,7.3,0.32,Sandy Loam,0.44,Punjab_Remote_Sensing_Centre
+Sri Muktsar Sahib,2023,11,3.496605346575174,159600,Punjab_Agriculture_Department,14.66,0.30000000000000004,56.88321950743987,4.768298031445045,0.168,0.189,0.51,MODIS_GEE,8.1,0.38,Sandy Loam,0.89,Punjab_Remote_Sensing_Centre
+Sri Muktsar Sahib,2023,12,3.683973322847763,159600,Punjab_Agriculture_Department,14.858064516129033,1.0,60.040972528103076,5.451733510114371,0.142,0.084,0.43,MODIS_GEE,8.1,0.38,Sandy Loam,0.89,Punjab_Remote_Sensing_Centre
+Sri Muktsar Sahib,2023,1,10.3692159565615,159600,Punjab_Agriculture_Department,,,,,0.295,0.394,0.88,MODIS_GEE,8.1,0.38,Sandy Loam,0.89,Punjab_Remote_Sensing_Centre
+Sri Muktsar Sahib,2023,2,24.190374143004508,159600,Punjab_Agriculture_Department,,,,,0.6,0.564,1.8,MODIS_GEE,8.1,0.38,Sandy Loam,0.89,Punjab_Remote_Sensing_Centre
+Sri Muktsar Sahib,2023,3,33.07723034719671,159600,Punjab_Agriculture_Department,,,,,0.461,0.4,1.38,MODIS_GEE,8.1,0.38,Sandy Loam,0.89,Punjab_Remote_Sensing_Centre
+Sri Muktsar Sahib,2023,4,33.79851953281099,159600,Punjab_Agriculture_Department,,,,,0.312,0.217,0.93,MODIS_GEE,8.1,0.38,Sandy Loam,0.89,Punjab_Remote_Sensing_Centre

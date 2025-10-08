@@ -1,0 +1,6 @@
+State_clean,District_clean,Crop,Crop_Year,Season_clean,Area,Production,yield_quintal_ha
+GUJARAT,ARAVALLI,Maize,2018,Rabi       ,6763.0,39225.0,5.8
+GUJARAT,ARAVALLI,Maize,2019,Rabi       ,12990.0,64950.0,5.0
+GUJARAT,SABAR KANTHA,Maize,2017,Rabi       ,2219.0,21081.0,9.5
+GUJARAT,SABAR KANTHA,Maize,2018,Rabi       ,1480.0,8880.0,6.0
+GUJARAT,SABAR KANTHA,Maize,2019,Rabi       ,2771.0,16072.0,5.8

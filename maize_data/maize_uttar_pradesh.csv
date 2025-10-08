@@ -1,0 +1,7 @@
+State_clean,District_clean,Crop,Crop_Year,Season_clean,Area,Production,yield_quintal_ha
+UTTAR_PRADESH,FATEHPUR,Maize,2004,Rabi       ,1.0,5.0,5.0
+UTTAR_PRADESH,GHAZIABAD,Maize,2004,Rabi       ,1.0,5.0,5.0
+UTTAR_PRADESH,HATHRAS,Maize,2004,Rabi       ,1.0,5.0,5.0
+UTTAR_PRADESH,KANNAUJ,Maize,2019,Kharif     ,41941.0,220777.0,5.26
+UTTAR_PRADESH,KUSHI NAGAR,Maize,2004,Rabi       ,1546.0,9585.0,6.2
+UTTAR_PRADESH,SITAPUR,Maize,2004,Rabi       ,1.0,5.0,5.0

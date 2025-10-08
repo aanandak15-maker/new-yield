@@ -1,0 +1,2 @@
+{"timestamp": "2025-10-06 15:22:54,534", "logger": "agri_errors", "level": "ERROR", "function": "handle_error", "line": 292, "message": "[ERR_20251006_095254_4830402720] unsupported operand type(s) for -: 'NoneType' and 'float'"}
+{"timestamp": "2025-10-06 15:22:54,536", "logger": "agri_platform", "level": "INFO", "function": "handle_error", "line": 310, "message": "[ERR_20251006_095254_4830402720] Recovery action: Contact system administrator for assistance"}

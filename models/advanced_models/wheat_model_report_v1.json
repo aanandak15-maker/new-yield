@@ -1,0 +1,84 @@
+{
+  "model_name": "wheat_ensemble_v1",
+  "training_date": "2025-10-06T14:56:30.206657",
+  "dataset_info": {
+    "note": "Model initialized but not yet trained with real Punjab wheat data",
+    "supported_districts": 24,
+    "growth_stages": 5,
+    "optimal_temp_range": [
+      15,
+      25
+    ]
+  },
+  "ensemble_configuration": {
+    "models": [
+      "random_forest",
+      "gradient_boosting",
+      "xgboost"
+    ],
+    "weights": {
+      "random_forest": 0.4,
+      "gradient_boosting": 0.3,
+      "xgboost": 0.3
+    }
+  },
+  "performance": {
+    "note": "Model initialized but not yet trained with real data"
+  },
+  "wheat_specific_features": {
+    "optimal_growing_conditions": {
+      "temperature_range_celsius": [
+        15,
+        25
+      ],
+      "optimal_rainfall_mm": 400,
+      "growing_season_days": 150
+    },
+    "critical_stages": {
+      "germination": {
+        "days": 10,
+        "temp_range": [
+          18,
+          22
+        ]
+      },
+      "tillering": {
+        "days": 30,
+        "temp_range": [
+          12,
+          18
+        ]
+      },
+      "stem_elongation": {
+        "days": 25,
+        "temp_range": [
+          15,
+          20
+        ]
+      },
+      "grain_filling": {
+        "days": 35,
+        "temp_range": [
+          20,
+          25
+        ]
+      },
+      "maturation": {
+        "days": 20,
+        "temp_range": [
+          25,
+          30
+        ]
+      }
+    },
+    "seasonal_info": {
+      "sowing_month": "November",
+      "harvest_month": "April"
+    }
+  },
+  "platform_readiness": {
+    "wheat_platform_ready": true,
+    "api_integration_ready": false,
+    "notes": "Advanced feature engineering ready, needs real data training"
+  }
+}

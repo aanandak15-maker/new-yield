@@ -1,0 +1,23 @@
+district,soil_type,irrigation_coverage,groundwater_depth_m,irrigation_method,irrigation_efficiency,crop_water_requirement_mm_day,irrigation_interval_days,soil_moisture_capacity_mm,critical_moisture_threshold
+Amritsar,Alluvial,0.95,8.5,rainfed,0.4,6.5,7,120,0.5
+Tarn Taran,Sandy Loam,0.92,9.2,rainfed,0.4,6.5,7,120,0.5
+Bathinda,Alluvial,0.98,6.8,canal,0.65,6.5,7,120,0.5
+Mansa,Sandy,0.96,7.5,canal,0.65,6.5,7,120,0.5
+Muktsar,Sandy Loam,0.94,8.1,rainfed,0.4,6.5,7,120,0.5
+Ferozepur,Alluvial,0.97,7.2,canal,0.65,6.5,7,120,0.5
+Faridkot,Loam,0.95,6.9,canal,0.65,6.5,7,120,0.5
+Ludhiana,Alluvial,0.99,5.8,canal,0.65,6.5,7,120,0.5
+Jalandhar,Loam,0.96,8.3,rainfed,0.4,6.5,7,120,0.5
+Hoshiarpur,Loam,0.88,9.8,rainfed,0.4,6.5,7,120,0.5
+Kapurthala,Sandy Loam,0.91,8.7,rainfed,0.4,6.5,7,120,0.5
+Nawanshahr,Loam,0.89,9.1,rainfed,0.4,6.5,7,120,0.5
+Sangrur,Alluvial,0.97,7.4,canal,0.65,6.5,7,120,0.5
+Barnala,Loam,0.94,8.2,rainfed,0.4,6.5,7,120,0.5
+Patiala,Alluvial,0.98,6.5,canal,0.65,6.5,7,120,0.5
+Fatehgarh Sahib,Loam,0.92,7.8,canal,0.65,6.5,7,120,0.5
+Gurdaspur,Loam,0.85,10.2,rainfed,0.4,6.5,7,120,0.5
+Pathankot,Sandy Loam,0.82,11.5,rainfed,0.4,6.5,7,120,0.5
+Rupnagar,Loam,0.87,9.5,rainfed,0.4,6.5,7,120,0.5
+Mohali,Loam,0.91,8.9,rainfed,0.4,6.5,7,120,0.5
+Fazilka,Sandy,0.93,7.9,canal,0.65,6.5,7,120,0.5
+Sri Muktsar Sahib,Sandy Loam,0.95,8.4,rainfed,0.4,6.5,7,120,0.5

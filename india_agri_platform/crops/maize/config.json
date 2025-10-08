@@ -1,0 +1,411 @@
+{
+  "crop_name": "maize",
+  "display_name": "Maize",
+  "scientific_name": "Zea mays",
+  "yield_parameters": {
+    "max_yield_quintal_ha": 80,
+    "yield_stability_index": 0.7
+  },
+  "growth_parameters": {
+    "crop_duration_days": {
+      "kharif": 110,
+      "rabi": 140,
+      "summer": 90
+    },
+    "critical_growth_stages": [
+      "germination",
+      "vegetative_growth",
+      "tasseling",
+      "grain_filling"
+    ],
+    "heat_sensitivity_window": "tasseling to grain filling"
+  },
+  "environmental_requirements": {
+    "temperature_optimal_c": {
+      "germination": 20,
+      "vegetative": 22,
+      "tasseling": 26,
+      "grain_filling": 24
+    },
+    "temperature_range_c": {
+      "min": 10,
+      "max": 35,
+      "critical_max": 40,
+      "heat_stress_threshold": 35
+    },
+    "rainfall_requirement_mm": {
+      "kharif": 500,
+      "rabi": 200,
+      "summer": 150,
+      "critical_stages": [
+        "silking",
+        "grain_filling"
+      ]
+    },
+    "soil_ph_range": {
+      "min": 5.5,
+      "max": 7.5,
+      "optimal_min": 6.0,
+      "optimal_max": 7.0
+    },
+    "soil_texture": [
+      "sandy_loam",
+      "loam",
+      "clay_loam"
+    ],
+    "irrigation_frequency": "regular_drip"
+  },
+  "nutrient_requirements": {
+    "nitrogen_kg_ha": 180,
+    "phosphorus_kg_ha": 80,
+    "potassium_kg_ha": 50,
+    "micronutrients": {
+      "zinc": 25,
+      "iron": 20,
+      "manganese": 15
+    },
+    "organic_matter_requirement": "medium"
+  },
+  "water_requirements": {
+    "water_depth_cm": {
+      "germination": 3.0,
+      "vegetative": 7.0,
+      "tasseling": 8.0,
+      "grain_filling": 6.0
+    },
+    "total_water_requirement_mm": 500,
+    "irrigation_efficiency_percent": 75,
+    "critical_water_stages": [
+      "tasseling",
+      "silking",
+      "grain_filling"
+    ]
+  },
+  "pest_risks": {
+    "corn_borer": {
+      "risk_level": "very_high",
+      "preventive_measures": [
+        "pheromone_traps",
+        "biological_control",
+        "hybrid_resistance"
+      ]
+    },
+    "fall_armyworm": {
+      "risk_level": "high",
+      "preventive_measures": [
+        "field_monitoring",
+        "NPV_spray",
+        "trench_barriers"
+      ]
+    },
+    "stem_borer": {
+      "risk_level": "medium",
+      "preventive_measures": [
+        "crop_rotation",
+        "neem_oil_spray"
+      ]
+    },
+    "aphids": {
+      "risk_level": "medium",
+      "preventive_measures": [
+        "ladybird_beetle",
+        "refuge_crops"
+      ]
+    },
+    "cutworm": {
+      "risk_level": "medium",
+      "preventive_measures": [
+        "field_sanitation",
+        "light_traps"
+      ]
+    }
+  },
+  "disease_risks": {
+    "turcicum_leaf_blight": {
+      "risk_level": "medium",
+      "preventive_measures": [
+        "fungicide_spray",
+        "field_sanitation"
+      ]
+    },
+    "rust": {
+      "risk_level": "high",
+      "preventive_measures": [
+        "resistant_hybrids",
+        "folicur_spray"
+      ]
+    },
+    "downy_mildew": {
+      "risk_level": "medium",
+      "preventive_measures": [
+        "seed_treatment",
+        "field_drainage"
+      ]
+    },
+    "bacterial_stalk_rot": {
+      "risk_level": "low",
+      "preventive_measures": [
+        "balanced_fertilization",
+        "avoid_water_logging"
+      ]
+    }
+  },
+  "market_parameters": {
+    "average_price_per_quintal": 1600,
+    "seasonal_variation_percent": 20,
+    "export_potential": false,
+    "main_use": "food_corn",
+    "processing_types": [
+      "whole_grain",
+      "flour",
+      "animal_feed",
+      "starch"
+    ],
+    "storage_duration_months": 12
+  },
+  "climate_adaptation": {
+    "drought_tolerance_score": 7,
+    "flood_tolerance_score": 4,
+    "heat_tolerance_score": 5,
+    "cold_tolerance_score": 6
+  },
+  "hybrid_characteristics": {
+    "hybrid_types": [
+      "single_cross",
+      "double_cross",
+      "three_way"
+    ],
+    "yield_increase_percent": 50,
+    "hybrid_maturity_groups": [
+      "early",
+      "medium",
+      "late"
+    ],
+    "hybrid_cost_benefit_ratio": 8.5,
+    "hybrid_adoption_rate": 85
+  },
+  "statewise_parameters": {
+    "karnataka": {
+      "yield_adjustment_factor": 1.4,
+      "irrigation_requirement_percent": 60,
+      "dominant_hybrids": [
+        "DKC-9108",
+        "DKC-9142",
+        "30V92"
+      ],
+      "market_preference": "processing_industry",
+      "soil_suitability": "excellent"
+    },
+    "maharashtra": {
+      "yield_adjustment_factor": 1.3,
+      "irrigation_requirement_percent": 75,
+      "dominant_hybrids": [
+        "30F53",
+        "NK-6240",
+        "PAC-740"
+      ],
+      "market_preference": "food_grain",
+      "soil_suitability": "good"
+    },
+    "andhra_pradesh": {
+      "yield_adjustment_factor": 1.2,
+      "irrigation_requirement_percent": 65,
+      "dominant_hybrids": [
+        "NK-6240",
+        "PAC-740",
+        "30V92"
+      ],
+      "market_preference": "mixed_use",
+      "soil_suitability": "good"
+    },
+    "bihar": {
+      "yield_adjustment_factor": 1.0,
+      "irrigation_requirement_percent": 40,
+      "dominant_hybrids": [
+        "PAC-740",
+        "30V92",
+        "HQPM-1"
+      ],
+      "market_preference": "self_consumption",
+      "soil_suitability": "moderate"
+    },
+    "uttar_pradesh": {
+      "yield_adjustment_factor": 1.1,
+      "irrigation_requirement_percent": 55,
+      "dominant_hybrids": [
+        "HQPM-1",
+        "PAC-740",
+        "30V92"
+      ],
+      "market_preference": "food_security",
+      "soil_suitability": "good"
+    },
+    "madhya_pradesh": {
+      "yield_adjustment_factor": 0.9,
+      "irrigation_requirement_percent": 45,
+      "dominant_hybrids": [
+        "PAC-740",
+        "HQPM-1",
+        "30V92"
+      ],
+      "market_preference": "local_markets",
+      "soil_suitability": "moderate"
+    }
+  },
+  "seasonal_characteristics": {
+    "kharif": {
+      "sowing_period": "June-July",
+      "harvesting_period": "October-November",
+      "rainfall_dependence": "high",
+      "yield_potential_percent": 100,
+      "heat_stress_risk": "medium"
+    },
+    "rabi": {
+      "sowing_period": "November-December",
+      "harvesting_period": "March-April",
+      "irrigation_dependence": "high",
+      "yield_potential_percent": 85,
+      "temperature_risk": "low_temperature"
+    },
+    "summer": {
+      "sowing_period": "February-March",
+      "harvesting_period": "May-June",
+      "heat_stress_risk": "very_high",
+      "yield_potential_percent": 70,
+      "water_management": "critical"
+    }
+  },
+  "regional_adaptability": {
+    "south_india": [
+      "karnataka",
+      "tamil_nadu",
+      "andhra_pradesh"
+    ],
+    "central_india": [
+      "madhya_pradesh",
+      "maharashtra",
+      "chhattisgarh"
+    ],
+    "east_india": [
+      "bihar",
+      "west_bengal",
+      "odisha"
+    ],
+    "north_india": [
+      "uttar_pradesh",
+      "rajasthan",
+      "haryana"
+    ],
+    "high_yielding_zones": [
+      "karnataka",
+      "maharashtra",
+      "andhra_pradesh"
+    ]
+  },
+  "operational_parameters": {
+    "plant_population_per_ha": 65000,
+    "row_spacing_cm": 60,
+    "plant_spacing_cm": 25,
+    "cob_charactersitic": "dent_corn",
+    "starch_content_percent": 65,
+    "protein_content_percent": 9,
+    "oil_content_percent": 4,
+    "harvest_index": 0.45,
+    "machinery_compatibility": "high"
+  },
+  "quality_parameters": {
+    "grain_moisture_at_harvest": 25,
+    "safe_storage_moisture": 14,
+    "test_weight_kg_hl": 75,
+    "breakage_resistance": "good",
+    "processing_quality": "food_grade"
+  },
+  "value_chain": {
+    "primary_uses": [
+      "human_consumption",
+      "animal_feed",
+      "industrial_processing"
+    ],
+    "by_product_value": "stover_livestock_feed",
+    "export_eligibility": false,
+    "domestic_market_size": "large",
+    "price_volatility": "medium"
+  },
+  "research_priorities": {
+    "breeding_focus": "heat_tolerance",
+    "trait_development": "biofortification",
+    "yield_ceiling_target": 100,
+    "climate_resilient_varieties": true,
+    "quality_improvement": "nutrition_enhancement"
+  },
+  "growth_duration_days": 120,
+  "water_requirement_mm_per_day": 7.0,
+  "growth_stages": {
+    "initial": {
+      "duration_days": 30,
+      "kc": 0.3,
+      "water_mm_day": 2.5
+    },
+    "development": {
+      "duration_days": 40,
+      "kc": 0.7,
+      "water_mm_day": 4.0
+    },
+    "mid_season": {
+      "duration_days": 40,
+      "kc": 1.15,
+      "water_mm_day": 6.5
+    },
+    "late_season": {
+      "duration_days": 30,
+      "kc": 0.6,
+      "water_mm_day": 3.0
+    }
+  },
+  "disease_susceptibility": {
+    "rust": 0.5,
+    "blight": 0.5,
+    "mildew": 0.5,
+    "aphids": 0.5,
+    "termites": 0.5
+  },
+  "climate_sensitivity": {
+    "temperature_optimal_c": 25,
+    "temperature_range_c": [
+      15,
+      35
+    ],
+    "humidity_optimal_percent": 60,
+    "rainfall_optimal_mm": 800
+  },
+  "soil_requirements": {
+    "ph_range": [
+      6.0,
+      7.5
+    ],
+    "texture_preference": [
+      "loam",
+      "sandy_loam"
+    ],
+    "organic_matter_min_percent": 1.0
+  },
+  "season": "kharif",
+  "planting_months": [
+    6,
+    7
+  ],
+  "harvest_months": [
+    9,
+    10,
+    11
+  ],
+  "varieties": [],
+  "feature_weights": {
+    "ndvi": 0.25,
+    "rainfall": 0.2,
+    "temperature": 0.15,
+    "soil_ph": 0.1,
+    "irrigation_coverage": 0.1,
+    "variety_score": 0.2
+  }
+}

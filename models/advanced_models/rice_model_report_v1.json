@@ -1,0 +1,38 @@
+{
+  "model_name": "rice_ensemble_v1",
+  "training_date": "2025-10-06T14:54:58.617755",
+  "dataset_info": {
+    "source_files": 7,
+    "total_samples": 8580,
+    "features": 5
+  },
+  "individual_model_performance": {
+    "random_forest": {
+      "mae": 0.44904289044289036,
+      "weight": 0.4
+    },
+    "xgboost": {
+      "mae": 0.5135278350128717,
+      "weight": 0.4
+    },
+    "catboost": {
+      "mae": 0.5292369351367762,
+      "weight": 0.2
+    }
+  },
+  "ensemble_performance": {
+    "mae": 0.47625988729810026,
+    "r2_score": 0.6459265429000365,
+    "accuracy": "78.1"
+  },
+  "features_used": [
+    "normalized_area",
+    "crop_age_days",
+    "weather_rainfall",
+    "soil_ph",
+    "fertilizer_applied"
+  ],
+  "target_metric": "yield_quintal_per_hectare",
+  "plant_saathi_ready": true,
+  "notes": "First Plant Saathi AI rice model with ensemble learning"
+}

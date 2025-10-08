@@ -1,0 +1,29 @@
+{
+  "state": "ASSAM",
+  "created_at": "2025-10-05T23:21:10.891928",
+  "model_type": "RandomForestRegressor",
+  "training_results": {
+    "state": "ASSAM",
+    "training_records": 641,
+    "testing_records": 160,
+    "features_used": [
+      "Area",
+      "irrigation_coverage",
+      "Crop_Year"
+    ],
+    "r2_score": 0.2082,
+    "rmse": 0.06,
+    "mae": 0.04,
+    "cv_r2_mean": -0.4076,
+    "cv_r2_std": 0.2369,
+    "accuracy_level": "NEEDS IMPROVEMENT (<50%)",
+    "train_years": "2010-2017",
+    "test_years": "2018-2019"
+  },
+  "feature_columns": [
+    "Area",
+    "irrigation_coverage",
+    "Crop_Year"
+  ],
+  "rice_variety_aware": true
+}

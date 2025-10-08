@@ -1,0 +1,61 @@
+
+Punjab Rabi Crop Yield Prediction Model Report
+==================================================
+
+Generated on: 2025-10-05 13:37:01
+
+MODEL PERFORMANCE SUMMARY
+-------------------------
+
+
+Ridge:
+  R² Score: -3.2691
+  Mean Absolute Error: 0.57 quintal/ha
+  RMSE: 0.00 quintal/ha
+
+Random Forest:
+  R² Score: -0.3335
+  Mean Absolute Error: 0.31 quintal/ha
+  RMSE: 0.00 quintal/ha
+
+Gradient Boosting:
+  R² Score: 0.2063
+  Mean Absolute Error: 0.24 quintal/ha
+  RMSE: 0.00 quintal/ha
+
+
+BEST MODEL: Gradient Boosting
+R² Score: 0.2063
+
+FEATURES USED (10):
+  - temperature_celsius
+  - rainfall_mm
+  - humidity_percent
+  - wind_speed_kmph
+  - ndvi
+  - fpar
+  - lai
+  - soil_ph
+  - organic_carbon_percent
+  - salinity_dsm
+
+DATA SOURCES:
+  - Punjab Agriculture Department (yield data)
+  - India Meteorological Department (weather data)
+  - Google Earth Engine (satellite vegetation indices)
+  - Punjab Remote Sensing Centre (soil data)
+
+TRAINING PERIOD: Rabi Season (November-April)
+GEOGRAPHICAL COVERAGE: 22 districts of Punjab
+
+MODEL LIMITATIONS:
+  - Trained on historical data (2023)
+  - Performance may vary with extreme weather events
+  - Satellite data quality depends on cloud cover
+  - Soil data represents average conditions
+
+RECOMMENDATIONS:
+  - Update model annually with new yield data
+  - Incorporate real-time weather forecasts for predictions
+  - Validate model performance across different agro-climatic zones
+  - Consider district-specific model tuning for better accuracy

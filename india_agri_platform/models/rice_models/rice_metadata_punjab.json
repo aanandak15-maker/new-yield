@@ -1,0 +1,29 @@
+{
+  "state": "PUNJAB",
+  "created_at": "2025-10-05T23:21:07.991650",
+  "model_type": "RandomForestRegressor",
+  "training_results": {
+    "state": "PUNJAB",
+    "training_records": 172,
+    "testing_records": 44,
+    "features_used": [
+      "Area",
+      "irrigation_coverage",
+      "Crop_Year"
+    ],
+    "r2_score": -0.0268,
+    "rmse": 0.05,
+    "mae": 0.04,
+    "cv_r2_mean": -0.2788,
+    "cv_r2_std": 0.5563,
+    "accuracy_level": "NEEDS IMPROVEMENT (<50%)",
+    "train_years": "2010-2017",
+    "test_years": "2018-2019"
+  },
+  "feature_columns": [
+    "Area",
+    "irrigation_coverage",
+    "Crop_Year"
+  ],
+  "rice_variety_aware": true
+}

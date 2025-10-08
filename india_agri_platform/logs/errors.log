@@ -1,0 +1,1 @@
+2025-10-06 15:22:54,534 - agri_errors - ERROR - handle_error:292 - [ERR_20251006_095254_4830402720] unsupported operand type(s) for -: 'NoneType' and 'float'
