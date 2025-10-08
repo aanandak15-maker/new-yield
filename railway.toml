@@ -1,14 +1,9 @@
 [build]
-builder = "python"
 buildCommand = "pip install -r requirements.txt"
 
 [deploy]
 startCommand = "uvicorn india_agri_platform.api.main:app --host 0.0.0.0 --port $PORT"
-restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
-
-[services.railway-detect]
-railway.enable = false
 
 [[volumes]]
 local_path = "models"
