@@ -2,15 +2,13 @@
 buildCommand = "pip install -r requirements.txt"
 
 [deploy]
-startCommand = "uvicorn india_agri_platform.api.main:app --host 0.0.0.0 --port $PORT"
+startCommand = "uvicorn india_agri_platform.api.main:app --host 0.0.0.0"
 restartPolicyMaxRetries = 10
+healthcheckPath = "/health"
+healthcheckTimeout = 300
 
-[[volumes]]
-local_path = "models"
-remote_path = "models"
-mount_path = "/app/models"
-
-[[volumes]]
-local_path = "india_agri_platform"
-remote_path = "india_agri_platform"
-mount_path = "/app/india_agri_platform"
+# Volume mounts for model persistence (commented out - Railway handles this)
+# [[volumes]]
+# local_path = "models"
+# remote_path = "models"
+# mount_path = "/app/models"
