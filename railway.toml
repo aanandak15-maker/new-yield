@@ -2,7 +2,7 @@
 buildCommand = "pip install -r requirements.txt"
 
 [deploy]
-startCommand = "uvicorn india_agri_platform.api.main:app --host 0.0.0.0"
+startCommand = "uvicorn india_agri_platform.api.main:app --host 0.0.0.0 --port $PORT"
 restartPolicyMaxRetries = 10
 
 [[volumes]]
